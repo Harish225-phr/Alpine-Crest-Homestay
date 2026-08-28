@@ -4,7 +4,7 @@ import { pageMeta, breadcrumbSchema } from "@/lib/site";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { destinations } from "@/lib/content";
 
-export const Route = createFileRoute("/places-to-visit")({
+export const Route = createFileRoute("/places-to-visit/")({
   head: () => ({
     meta: [
       { title: "Places to Visit Near Theog & Kufri | Alpine Crest Homestay" },

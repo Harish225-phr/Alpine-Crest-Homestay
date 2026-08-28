@@ -25,4 +25,22 @@
   <url><loc>/blog/weekend-getaway-near-shimla</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>/privacy-policy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>/terms-and-conditions</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>/homestay-in-shimla</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>/homestay-in-theog</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>/homestay-near-theog</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>/places-to-stay-in-shimla</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>/places-to-stay-in-theog</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>/places-to-stay-near-kufri</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>/stay-near-kufri</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>/mountain-view-homestay-shimla</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>/mountain-view-homestay-theog</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>/blog/best-places-to-stay-near-theog</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>/blog/best-homestays-near-kufri</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>/blog/where-to-stay-near-shimla-away-from-crowds</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>/blog/theog-travel-guide</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>/blog/kufri-travel-guide</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>/blog/shimla-to-kufri-travel-guide</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>/blog/theog-to-kufri-travel-guide</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>/blog/best-time-to-visit-kufri</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>/blog/peaceful-mountain-stays-near-shimla</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>

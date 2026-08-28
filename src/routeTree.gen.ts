@@ -10,33 +10,338 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as AmenitiesRouteImport } from './routes/amenities'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as GalleryRouteImport } from './routes/gallery'
+import { Route as HomestayInShimlaRouteImport } from './routes/homestay-in-shimla'
+import { Route as HomestayInTheogRouteImport } from './routes/homestay-in-theog'
+import { Route as HomestayNearKufriRouteImport } from './routes/homestay-near-kufri'
+import { Route as HomestayNearShimlaRouteImport } from './routes/homestay-near-shimla'
+import { Route as LocationRouteImport } from './routes/location'
+import { Route as MountainViewHomestayShimlaRouteImport } from './routes/mountain-view-homestay-shimla'
+import { Route as MountainViewHomestayTheogRouteImport } from './routes/mountain-view-homestay-theog'
+import { Route as PlacesToStayInShimlaRouteImport } from './routes/places-to-stay-in-shimla'
+import { Route as PlacesToStayInTheogRouteImport } from './routes/places-to-stay-in-theog'
+import { Route as PlacesToStayNearKufriRouteImport } from './routes/places-to-stay-near-kufri'
+import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
+import { Route as RoomsRouteImport } from './routes/rooms'
+import { Route as StayNearKufriRouteImport } from './routes/stay-near-kufri'
+import { Route as StayNearTheogRouteImport } from './routes/stay-near-theog'
+import { Route as TermsAndConditionsRouteImport } from './routes/terms-and-conditions'
+import { Route as BlogIndexRouteImport } from './routes/blog/index'
+import { Route as BlogSlugRouteImport } from './routes/blog/$slug'
+import { Route as PlacesToVisitIndexRouteImport } from './routes/places-to-visit/index'
+import { Route as PlacesToVisitSlugRouteImport } from './routes/places-to-visit/$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AmenitiesRoute = AmenitiesRouteImport.update({
+  id: '/amenities',
+  path: '/amenities',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GalleryRoute = GalleryRouteImport.update({
+  id: '/gallery',
+  path: '/gallery',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HomestayInShimlaRoute = HomestayInShimlaRouteImport.update({
+  id: '/homestay-in-shimla',
+  path: '/homestay-in-shimla',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HomestayInTheogRoute = HomestayInTheogRouteImport.update({
+  id: '/homestay-in-theog',
+  path: '/homestay-in-theog',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HomestayNearKufriRoute = HomestayNearKufriRouteImport.update({
+  id: '/homestay-near-kufri',
+  path: '/homestay-near-kufri',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HomestayNearShimlaRoute = HomestayNearShimlaRouteImport.update({
+  id: '/homestay-near-shimla',
+  path: '/homestay-near-shimla',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LocationRoute = LocationRouteImport.update({
+  id: '/location',
+  path: '/location',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MountainViewHomestayShimlaRoute =
+  MountainViewHomestayShimlaRouteImport.update({
+    id: '/mountain-view-homestay-shimla',
+    path: '/mountain-view-homestay-shimla',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const MountainViewHomestayTheogRoute =
+  MountainViewHomestayTheogRouteImport.update({
+    id: '/mountain-view-homestay-theog',
+    path: '/mountain-view-homestay-theog',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PlacesToStayInShimlaRoute = PlacesToStayInShimlaRouteImport.update({
+  id: '/places-to-stay-in-shimla',
+  path: '/places-to-stay-in-shimla',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlacesToStayInTheogRoute = PlacesToStayInTheogRouteImport.update({
+  id: '/places-to-stay-in-theog',
+  path: '/places-to-stay-in-theog',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlacesToStayNearKufriRoute = PlacesToStayNearKufriRouteImport.update({
+  id: '/places-to-stay-near-kufri',
+  path: '/places-to-stay-near-kufri',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
+  id: '/privacy-policy',
+  path: '/privacy-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RoomsRoute = RoomsRouteImport.update({
+  id: '/rooms',
+  path: '/rooms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StayNearKufriRoute = StayNearKufriRouteImport.update({
+  id: '/stay-near-kufri',
+  path: '/stay-near-kufri',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StayNearTheogRoute = StayNearTheogRouteImport.update({
+  id: '/stay-near-theog',
+  path: '/stay-near-theog',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsAndConditionsRoute = TermsAndConditionsRouteImport.update({
+  id: '/terms-and-conditions',
+  path: '/terms-and-conditions',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogSlugRoute = BlogSlugRouteImport.update({
+  id: '/blog/$slug',
+  path: '/blog/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlacesToVisitIndexRoute = PlacesToVisitIndexRouteImport.update({
+  id: '/places-to-visit/',
+  path: '/places-to-visit/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlacesToVisitSlugRoute = PlacesToVisitSlugRouteImport.update({
+  id: '/places-to-visit/$slug',
+  path: '/places-to-visit/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/amenities': typeof AmenitiesRoute
+  '/contact': typeof ContactRoute
+  '/gallery': typeof GalleryRoute
+  '/homestay-in-shimla': typeof HomestayInShimlaRoute
+  '/homestay-in-theog': typeof HomestayInTheogRoute
+  '/homestay-near-kufri': typeof HomestayNearKufriRoute
+  '/homestay-near-shimla': typeof HomestayNearShimlaRoute
+  '/location': typeof LocationRoute
+  '/mountain-view-homestay-shimla': typeof MountainViewHomestayShimlaRoute
+  '/mountain-view-homestay-theog': typeof MountainViewHomestayTheogRoute
+  '/places-to-stay-in-shimla': typeof PlacesToStayInShimlaRoute
+  '/places-to-stay-in-theog': typeof PlacesToStayInTheogRoute
+  '/places-to-stay-near-kufri': typeof PlacesToStayNearKufriRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
+  '/rooms': typeof RoomsRoute
+  '/stay-near-kufri': typeof StayNearKufriRoute
+  '/stay-near-theog': typeof StayNearTheogRoute
+  '/terms-and-conditions': typeof TermsAndConditionsRoute
+  '/blog/$slug': typeof BlogSlugRoute
+  '/places-to-visit/$slug': typeof PlacesToVisitSlugRoute
+  '/blog/': typeof BlogIndexRoute
+  '/places-to-visit/': typeof PlacesToVisitIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/amenities': typeof AmenitiesRoute
+  '/contact': typeof ContactRoute
+  '/gallery': typeof GalleryRoute
+  '/homestay-in-shimla': typeof HomestayInShimlaRoute
+  '/homestay-in-theog': typeof HomestayInTheogRoute
+  '/homestay-near-kufri': typeof HomestayNearKufriRoute
+  '/homestay-near-shimla': typeof HomestayNearShimlaRoute
+  '/location': typeof LocationRoute
+  '/mountain-view-homestay-shimla': typeof MountainViewHomestayShimlaRoute
+  '/mountain-view-homestay-theog': typeof MountainViewHomestayTheogRoute
+  '/places-to-stay-in-shimla': typeof PlacesToStayInShimlaRoute
+  '/places-to-stay-in-theog': typeof PlacesToStayInTheogRoute
+  '/places-to-stay-near-kufri': typeof PlacesToStayNearKufriRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
+  '/rooms': typeof RoomsRoute
+  '/stay-near-kufri': typeof StayNearKufriRoute
+  '/stay-near-theog': typeof StayNearTheogRoute
+  '/terms-and-conditions': typeof TermsAndConditionsRoute
+  '/blog/$slug': typeof BlogSlugRoute
+  '/places-to-visit/$slug': typeof PlacesToVisitSlugRoute
+  '/blog': typeof BlogIndexRoute
+  '/places-to-visit': typeof PlacesToVisitIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/amenities': typeof AmenitiesRoute
+  '/contact': typeof ContactRoute
+  '/gallery': typeof GalleryRoute
+  '/homestay-in-shimla': typeof HomestayInShimlaRoute
+  '/homestay-in-theog': typeof HomestayInTheogRoute
+  '/homestay-near-kufri': typeof HomestayNearKufriRoute
+  '/homestay-near-shimla': typeof HomestayNearShimlaRoute
+  '/location': typeof LocationRoute
+  '/mountain-view-homestay-shimla': typeof MountainViewHomestayShimlaRoute
+  '/mountain-view-homestay-theog': typeof MountainViewHomestayTheogRoute
+  '/places-to-stay-in-shimla': typeof PlacesToStayInShimlaRoute
+  '/places-to-stay-in-theog': typeof PlacesToStayInTheogRoute
+  '/places-to-stay-near-kufri': typeof PlacesToStayNearKufriRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
+  '/rooms': typeof RoomsRoute
+  '/stay-near-kufri': typeof StayNearKufriRoute
+  '/stay-near-theog': typeof StayNearTheogRoute
+  '/terms-and-conditions': typeof TermsAndConditionsRoute
+  '/blog/$slug': typeof BlogSlugRoute
+  '/places-to-visit/$slug': typeof PlacesToVisitSlugRoute
+  '/blog/': typeof BlogIndexRoute
+  '/places-to-visit/': typeof PlacesToVisitIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/amenities'
+    | '/contact'
+    | '/gallery'
+    | '/homestay-in-shimla'
+    | '/homestay-in-theog'
+    | '/homestay-near-kufri'
+    | '/homestay-near-shimla'
+    | '/location'
+    | '/mountain-view-homestay-shimla'
+    | '/mountain-view-homestay-theog'
+    | '/places-to-stay-in-shimla'
+    | '/places-to-stay-in-theog'
+    | '/places-to-stay-near-kufri'
+    | '/privacy-policy'
+    | '/rooms'
+    | '/stay-near-kufri'
+    | '/stay-near-theog'
+    | '/terms-and-conditions'
+    | '/blog/$slug'
+    | '/places-to-visit/$slug'
+    | '/blog/'
+    | '/places-to-visit/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/amenities'
+    | '/contact'
+    | '/gallery'
+    | '/homestay-in-shimla'
+    | '/homestay-in-theog'
+    | '/homestay-near-kufri'
+    | '/homestay-near-shimla'
+    | '/location'
+    | '/mountain-view-homestay-shimla'
+    | '/mountain-view-homestay-theog'
+    | '/places-to-stay-in-shimla'
+    | '/places-to-stay-in-theog'
+    | '/places-to-stay-near-kufri'
+    | '/privacy-policy'
+    | '/rooms'
+    | '/stay-near-kufri'
+    | '/stay-near-theog'
+    | '/terms-and-conditions'
+    | '/blog/$slug'
+    | '/places-to-visit/$slug'
+    | '/blog'
+    | '/places-to-visit'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/amenities'
+    | '/contact'
+    | '/gallery'
+    | '/homestay-in-shimla'
+    | '/homestay-in-theog'
+    | '/homestay-near-kufri'
+    | '/homestay-near-shimla'
+    | '/location'
+    | '/mountain-view-homestay-shimla'
+    | '/mountain-view-homestay-theog'
+    | '/places-to-stay-in-shimla'
+    | '/places-to-stay-in-theog'
+    | '/places-to-stay-near-kufri'
+    | '/privacy-policy'
+    | '/rooms'
+    | '/stay-near-kufri'
+    | '/stay-near-theog'
+    | '/terms-and-conditions'
+    | '/blog/$slug'
+    | '/places-to-visit/$slug'
+    | '/blog/'
+    | '/places-to-visit/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  AmenitiesRoute: typeof AmenitiesRoute
+  ContactRoute: typeof ContactRoute
+  GalleryRoute: typeof GalleryRoute
+  HomestayInShimlaRoute: typeof HomestayInShimlaRoute
+  HomestayInTheogRoute: typeof HomestayInTheogRoute
+  HomestayNearKufriRoute: typeof HomestayNearKufriRoute
+  HomestayNearShimlaRoute: typeof HomestayNearShimlaRoute
+  LocationRoute: typeof LocationRoute
+  MountainViewHomestayShimlaRoute: typeof MountainViewHomestayShimlaRoute
+  MountainViewHomestayTheogRoute: typeof MountainViewHomestayTheogRoute
+  PlacesToStayInShimlaRoute: typeof PlacesToStayInShimlaRoute
+  PlacesToStayInTheogRoute: typeof PlacesToStayInTheogRoute
+  PlacesToStayNearKufriRoute: typeof PlacesToStayNearKufriRoute
+  PrivacyPolicyRoute: typeof PrivacyPolicyRoute
+  RoomsRoute: typeof RoomsRoute
+  StayNearKufriRoute: typeof StayNearKufriRoute
+  StayNearTheogRoute: typeof StayNearTheogRoute
+  TermsAndConditionsRoute: typeof TermsAndConditionsRoute
+  BlogSlugRoute: typeof BlogSlugRoute
+  PlacesToVisitSlugRoute: typeof PlacesToVisitSlugRoute
+  BlogIndexRoute: typeof BlogIndexRoute
+  PlacesToVisitIndexRoute: typeof PlacesToVisitIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +353,195 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/amenities': {
+      id: '/amenities'
+      path: '/amenities'
+      fullPath: '/amenities'
+      preLoaderRoute: typeof AmenitiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gallery': {
+      id: '/gallery'
+      path: '/gallery'
+      fullPath: '/gallery'
+      preLoaderRoute: typeof GalleryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/homestay-in-shimla': {
+      id: '/homestay-in-shimla'
+      path: '/homestay-in-shimla'
+      fullPath: '/homestay-in-shimla'
+      preLoaderRoute: typeof HomestayInShimlaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/homestay-in-theog': {
+      id: '/homestay-in-theog'
+      path: '/homestay-in-theog'
+      fullPath: '/homestay-in-theog'
+      preLoaderRoute: typeof HomestayInTheogRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/homestay-near-kufri': {
+      id: '/homestay-near-kufri'
+      path: '/homestay-near-kufri'
+      fullPath: '/homestay-near-kufri'
+      preLoaderRoute: typeof HomestayNearKufriRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/homestay-near-shimla': {
+      id: '/homestay-near-shimla'
+      path: '/homestay-near-shimla'
+      fullPath: '/homestay-near-shimla'
+      preLoaderRoute: typeof HomestayNearShimlaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/location': {
+      id: '/location'
+      path: '/location'
+      fullPath: '/location'
+      preLoaderRoute: typeof LocationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mountain-view-homestay-shimla': {
+      id: '/mountain-view-homestay-shimla'
+      path: '/mountain-view-homestay-shimla'
+      fullPath: '/mountain-view-homestay-shimla'
+      preLoaderRoute: typeof MountainViewHomestayShimlaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mountain-view-homestay-theog': {
+      id: '/mountain-view-homestay-theog'
+      path: '/mountain-view-homestay-theog'
+      fullPath: '/mountain-view-homestay-theog'
+      preLoaderRoute: typeof MountainViewHomestayTheogRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/places-to-stay-in-shimla': {
+      id: '/places-to-stay-in-shimla'
+      path: '/places-to-stay-in-shimla'
+      fullPath: '/places-to-stay-in-shimla'
+      preLoaderRoute: typeof PlacesToStayInShimlaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/places-to-stay-in-theog': {
+      id: '/places-to-stay-in-theog'
+      path: '/places-to-stay-in-theog'
+      fullPath: '/places-to-stay-in-theog'
+      preLoaderRoute: typeof PlacesToStayInTheogRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/places-to-stay-near-kufri': {
+      id: '/places-to-stay-near-kufri'
+      path: '/places-to-stay-near-kufri'
+      fullPath: '/places-to-stay-near-kufri'
+      preLoaderRoute: typeof PlacesToStayNearKufriRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy-policy': {
+      id: '/privacy-policy'
+      path: '/privacy-policy'
+      fullPath: '/privacy-policy'
+      preLoaderRoute: typeof PrivacyPolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/rooms': {
+      id: '/rooms'
+      path: '/rooms'
+      fullPath: '/rooms'
+      preLoaderRoute: typeof RoomsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/stay-near-kufri': {
+      id: '/stay-near-kufri'
+      path: '/stay-near-kufri'
+      fullPath: '/stay-near-kufri'
+      preLoaderRoute: typeof StayNearKufriRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/stay-near-theog': {
+      id: '/stay-near-theog'
+      path: '/stay-near-theog'
+      fullPath: '/stay-near-theog'
+      preLoaderRoute: typeof StayNearTheogRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms-and-conditions': {
+      id: '/terms-and-conditions'
+      path: '/terms-and-conditions'
+      fullPath: '/terms-and-conditions'
+      preLoaderRoute: typeof TermsAndConditionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/': {
+      id: '/blog/'
+      path: '/blog'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/$slug': {
+      id: '/blog/$slug'
+      path: '/blog/$slug'
+      fullPath: '/blog/$slug'
+      preLoaderRoute: typeof BlogSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/places-to-visit/': {
+      id: '/places-to-visit/'
+      path: '/places-to-visit'
+      fullPath: '/places-to-visit/'
+      preLoaderRoute: typeof PlacesToVisitIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/places-to-visit/$slug': {
+      id: '/places-to-visit/$slug'
+      path: '/places-to-visit/$slug'
+      fullPath: '/places-to-visit/$slug'
+      preLoaderRoute: typeof PlacesToVisitSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  AmenitiesRoute: AmenitiesRoute,
+  ContactRoute: ContactRoute,
+  GalleryRoute: GalleryRoute,
+  HomestayInShimlaRoute: HomestayInShimlaRoute,
+  HomestayInTheogRoute: HomestayInTheogRoute,
+  HomestayNearKufriRoute: HomestayNearKufriRoute,
+  HomestayNearShimlaRoute: HomestayNearShimlaRoute,
+  LocationRoute: LocationRoute,
+  MountainViewHomestayShimlaRoute: MountainViewHomestayShimlaRoute,
+  MountainViewHomestayTheogRoute: MountainViewHomestayTheogRoute,
+  PlacesToStayInShimlaRoute: PlacesToStayInShimlaRoute,
+  PlacesToStayInTheogRoute: PlacesToStayInTheogRoute,
+  PlacesToStayNearKufriRoute: PlacesToStayNearKufriRoute,
+  PrivacyPolicyRoute: PrivacyPolicyRoute,
+  RoomsRoute: RoomsRoute,
+  StayNearKufriRoute: StayNearKufriRoute,
+  StayNearTheogRoute: StayNearTheogRoute,
+  TermsAndConditionsRoute: TermsAndConditionsRoute,
+  BlogSlugRoute: BlogSlugRoute,
+  PlacesToVisitSlugRoute: PlacesToVisitSlugRoute,
+  BlogIndexRoute: BlogIndexRoute,
+  PlacesToVisitIndexRoute: PlacesToVisitIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

@@ -14,6 +14,16 @@ const columns: { title: string; links: { to: string; label: string }[] }[] = [
     ],
   },
   {
+    title: "Stay",
+    links: [
+      { to: "/homestay-in-theog", label: "Homestay in Theog" },
+      { to: "/homestay-near-kufri", label: "Homestay Near Kufri" },
+      { to: "/homestay-near-shimla", label: "Homestay Near Shimla" },
+      { to: "/places-to-stay-in-theog", label: "Places to Stay in Theog" },
+      { to: "/stay-near-kufri", label: "Stay Near Kufri" },
+    ],
+  },
+  {
     title: "Nearby",
     links: [
       { to: "/stay-near-theog", label: "Stay Near Theog" },

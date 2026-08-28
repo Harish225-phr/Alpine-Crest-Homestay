@@ -10,6 +10,7 @@ import {
   fitness,
   food,
 } from "@/lib/images";
+import { blogExtraArticles } from "@/lib/blog-extra";
 
 export type RoomInfo = {
   name: string;
@@ -287,8 +288,10 @@ export const blogArticles: BlogArticle[] = [
   },
 ];
 
+export const allBlogArticles: BlogArticle[] = [...blogArticles, ...blogExtraArticles];
+
 export function getArticle(slug: string): BlogArticle | undefined {
-  return blogArticles.find((a) => a.slug === slug);
+  return [...blogArticles, ...blogExtraArticles].find((a) => a.slug === slug);
 }
 
 export type GalleryImage = {

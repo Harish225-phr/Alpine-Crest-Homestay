@@ -27,9 +27,9 @@ import {
 export const Route = createFileRoute("/")({
   head: () =>
     pageMeta({
-      title: "Alpine Crest Homestay — Mountain Stay Near Theog, Shimla",
+      title: "Alpine Crest Homestay | Homestay Near Shimla, Theog & Kufri",
       description:
-        "Peaceful boutique homestay in Kathot, Theog (Himachal Pradesh). Mountain-view rooms, private balconies, home-cooked Himachali food. Book directly on WhatsApp.",
+        "Alpine Crest Homestay is a peaceful mountain retreat in Kathot near Theog, Himachal Pradesh. Panoramic mountain views, private balconies, home-cooked food and easy access to Theog, Kufri and Shimla.",
       path: "/",
     }),
   component: HomePage,
@@ -72,6 +72,15 @@ const destinations = [
   { name: "Chail", distance: "45 km", slug: "/places-to-visit" },
 ];
 
+const seoLinks = [
+  { to: "/homestay-in-shimla", label: "Homestay in Shimla", desc: "A peaceful mountain stay near Shimla" },
+  { to: "/homestay-in-theog", label: "Homestay in Theog", desc: "Comfortable rooms in Kathot near Theog" },
+  { to: "/homestay-near-kufri", label: "Homestay Near Kufri", desc: "A quiet alternative to staying in Kufri" },
+  { to: "/places-to-stay-in-shimla", label: "Places to Stay in Shimla", desc: "Quieter stays away from the crowds" },
+  { to: "/places-to-stay-in-theog", label: "Places to Stay in Theog", desc: "Homestay accommodation in the Theog area" },
+  { to: "/mountain-view-homestay-shimla", label: "Mountain View Homestay", desc: "Panoramic Himalayan views near Shimla" },
+];
+
 function HomePage() {
   return (
     <>
@@ -95,11 +104,13 @@ function HomePage() {
                 Kathot · Theog · Himachal Pradesh
               </p>
               <h1 className="mt-4 max-w-3xl font-display text-4xl leading-[1.08] text-sand sm:text-6xl">
-                A quiet Himalayan homestay where the valley wakes you up
+                Alpine Crest Homestay – Peaceful Homestay Near Shimla, Theog &amp; Kufri
               </h1>
               <p className="mt-5 max-w-xl text-base leading-relaxed text-sand/85">
-                Mountain-view rooms, private balconies and slow home-cooked
-                Himachali food — 30 minutes from Kufri, an hour from Shimla.
+                Escape to a peaceful mountain retreat in Kathot near Theog,
+                Himachal Pradesh. Enjoy panoramic mountain views, private
+                balconies, home-cooked Himachali food and convenient access to
+                Theog, Kufri and Shimla.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <WhatsAppLink message={WA.general}>Book on WhatsApp</WhatsAppLink>
@@ -343,6 +354,33 @@ function HomePage() {
             loading="lazy"
             className="h-full w-full object-cover"
           />
+        </div>
+      </section>
+
+      {/* SEO internal links */}
+      <section className="bg-secondary/60 py-16">
+        <div className="container-page">
+          <p className="eyebrow">Find your stay</p>
+          <h2 className="mt-3 text-2xl sm:text-3xl">
+            Looking for a homestay near Shimla, Theog or Kufri?
+          </h2>
+          <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            Alpine Crest Homestay is a peaceful mountain base near Theog, with
+            easy access to all the destinations in the upper Shimla hills.
+            Explore our dedicated pages for each location.
+          </p>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {seoLinks.map((l) => (
+              <Link
+                key={l.to}
+                to={l.to}
+                className="rounded-xl border border-border bg-card p-5 shadow-soft transition-colors hover:bg-secondary"
+              >
+                <p className="font-display text-lg">{l.label}</p>
+                <p className="mt-1 text-xs text-muted-foreground">{l.desc}</p>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
     </>

@@ -3,7 +3,7 @@ import { CalendarDays, Clock, ArrowLeft, ArrowRight } from "lucide-react";
 import { pageMeta, WA, breadcrumbSchema } from "@/lib/site";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { WhatsAppLink } from "@/components/site/WhatsAppLink";
-import { getArticle, blogArticles } from "@/lib/content";
+import { getArticle, allBlogArticles } from "@/lib/content";
 
 export const Route = createFileRoute("/blog/$slug")({
   head: ({ params }) => {
@@ -36,7 +36,7 @@ function BlogArticlePage() {
   const article = getArticle(slug);
   if (!article) throw notFound();
 
-  const others = blogArticles.filter((a) => a.slug !== slug).slice(0, 2);
+  const others = allBlogArticles.filter((a) => a.slug !== slug).slice(0, 2);
 
   return (
     <>

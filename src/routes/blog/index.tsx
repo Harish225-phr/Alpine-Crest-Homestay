@@ -2,9 +2,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { CalendarDays, Clock, ArrowRight } from "lucide-react";
 import { pageMeta, breadcrumbSchema } from "@/lib/site";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
-import { blogArticles } from "@/lib/content";
+import { allBlogArticles } from "@/lib/content";
 
-export const Route = createFileRoute("/blog")({
+export const Route = createFileRoute("/blog/")({
   head: () => ({
     meta: [
       { title: "Blog | Alpine Crest Homestay — Theog & Kufri Travel Guides" },
@@ -49,7 +49,7 @@ function BlogIndexPage() {
       </section>
 
       <section className="container-page grid gap-6 pb-20 sm:grid-cols-2">
-        {blogArticles.map((a) => (
+        {allBlogArticles.map((a) => (
           <Link
             key={a.slug}
             to={`/blog/${a.slug}`}
