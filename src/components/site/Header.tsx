@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
-import { Menu, X, Mountain } from "lucide-react";
+import { Menu, X, Mountain, Phone } from "lucide-react";
 import { useState } from "react";
-import { WA } from "@/lib/site";
+import { WA, SITE } from "@/lib/site";
 import { WhatsAppLink } from "./WhatsAppLink";
 
 const nav = [
@@ -52,6 +52,13 @@ export function Header() {
               ))}
             </ul>
           </nav>
+          <a
+            href={`tel:${SITE.phoneRaw}`}
+            className="hidden h-10 w-10 shrink-0 items-center justify-center rounded-full border border-border text-moss transition-colors hover:bg-secondary sm:flex"
+            aria-label="Call Alpine Crest Homestay"
+          >
+            <Phone className="h-4 w-4" aria-hidden="true" />
+          </a>
           <WhatsAppLink
             message={WA.general}
             variant="primary"
@@ -85,10 +92,17 @@ export function Header() {
                 </Link>
               </li>
             ))}
-            <li className="pt-2">
+            <li className="pt-2 grid grid-cols-2 gap-2">
               <WhatsAppLink message={WA.general} className="w-full">
-                WhatsApp Us
+                WhatsApp
               </WhatsAppLink>
+              <a
+                href={`tel:${SITE.phoneRaw}`}
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-clay px-6 py-3 text-sm font-semibold text-accent-foreground transition-colors hover:opacity-90"
+              >
+                <Phone className="h-4 w-4" aria-hidden="true" />
+                Call Now
+              </a>
             </li>
           </ul>
         </nav>
