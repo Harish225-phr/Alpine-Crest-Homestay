@@ -526,16 +526,17 @@ function HomePage() {
             <StaggerItem key={d.name}>
               <Link
                 to={d.slug}
-                className="group flex h-full min-h-[300px] flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-lift"
+                className="group flex h-full min-h-[300px] max-h-[300px] min-w-0 flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-lift"
               >
-                <div className="relative h-40 shrink-0 overflow-hidden">
+                <div className="relative h-40 min-h-40 max-h-40 w-full min-w-0 shrink-0 overflow-hidden">
                   <img
                     src={d.image}
                     alt={d.alt}
                     width={765}
                     height={520}
                     loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    style={{ width: "100%", minWidth: 0, height: "160px", minHeight: "160px", maxHeight: "160px", display: "block" }}
+                    className="h-40 min-h-40 max-h-40 w-full min-w-0 object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-pine/55 to-transparent" />
                   <span className="absolute bottom-3 left-4 grid h-9 w-9 place-items-center rounded-full bg-card/95 text-moss shadow-soft">
