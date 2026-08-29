@@ -87,10 +87,10 @@ const whyStay = [
 ];
 
 const destinations = [
-  { name: "Theog Town", distance: "6 km", slug: "/places-to-visit" },
-  { name: "Kufri", distance: "22 km", slug: "/homestay-near-kufri" },
-  { name: "Shimla Mall Road", distance: "38 km", slug: "/homestay-near-shimla" },
-  { name: "Chail", distance: "45 km", slug: "/places-to-visit" },
+  { name: "Theog Town", distance: "6 km", slug: "/places-to-visit", image: exterior, alt: "Mountain landscape near Theog, Himachal Pradesh" },
+  { name: "Kufri", distance: "22 km", slug: "/homestay-near-kufri", image: deluxeBalcony, alt: "Mountain view near Kufri from Alpine Crest Homestay" },
+  { name: "Shimla Mall Road", distance: "38 km", slug: "/homestay-near-shimla", image: lounge, alt: "Lounge at Alpine Crest Homestay near Shimla" },
+  { name: "Chail", distance: "45 km", slug: "/places-to-visit", image: standardRoom, alt: "Comfortable room at Alpine Crest near Chail" },
 ];
 
 function HomePage() {
@@ -521,23 +521,38 @@ function HomePage() {
         <Reveal>
           <SectionHeading eyebrow="Nearby Destinations" title="Day trips from your balcony" />
         </Reveal>
-        <StaggerGroup className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4" stagger={0.08}>
+        <StaggerGroup className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-[repeat(4,minmax(0,1fr))]" stagger={0.08}>
           {destinations.map((d) => (
             <StaggerItem key={d.name}>
               <Link
                 to={d.slug}
-                className="group rounded-2xl border border-border bg-card p-6 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-lift"
+                className="group flex h-full min-h-[300px] flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-lift"
               >
-                <MapPin className="h-6 w-6 text-moss" aria-hidden="true" />
-                <p className="mt-3 font-display text-xl">{d.name}</p>
-                <p className="text-sm text-muted-foreground">{d.distance} away</p>
-                <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-moss">
-                  Explore
-                  <ArrowRight
-                    className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1.5"
-                    aria-hidden="true"
+                <div className="relative h-40 shrink-0 overflow-hidden">
+                  <img
+                    src={d.image}
+                    alt={d.alt}
+                    width={765}
+                    height={520}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                </span>
+                  <div className="absolute inset-0 bg-gradient-to-t from-pine/55 to-transparent" />
+                  <span className="absolute bottom-3 left-4 grid h-9 w-9 place-items-center rounded-full bg-card/95 text-moss shadow-soft">
+                    <MapPin className="h-4 w-4" aria-hidden="true" />
+                  </span>
+                </div>
+                <div className="flex flex-1 flex-col p-5">
+                  <p className="font-display text-xl text-foreground">{d.name}</p>
+                  <p className="mt-1 text-sm text-muted-foreground">{d.distance} away</p>
+                  <span className="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-semibold text-moss">
+                    Explore
+                    <ArrowRight
+                      className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1.5"
+                      aria-hidden="true"
+                    />
+                  </span>
+                </div>
               </Link>
             </StaggerItem>
           ))}
