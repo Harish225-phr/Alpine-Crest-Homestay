@@ -89,8 +89,10 @@ const whyStay = [
 const destinations = [
   { name: "Theog Town", distance: "6 km", slug: "/homestay-at-theog", image: exterior, alt: "Mountain landscape near Theog, Himachal Pradesh" },
   { name: "Kufri", distance: "22 km", slug: "/homestay-at-kufri", image: deluxeBalcony, alt: "Mountain view near Kufri from Alpine Crest Homestay" },
+  { name: "Fagu", distance: "30 km", slug: "/homestay-at-fagu", image: deluxeRoom, alt: "Deluxe room with valley view near Fagu from Alpine Crest Homestay" },
   { name: "Shimla Mall Road", distance: "38 km", slug: "/homestay-at-shimla", image: lounge, alt: "Lounge at Alpine Crest Homestay near Shimla" },
   { name: "Chail", distance: "45 km", slug: "/homestay-at-chail", image: standardRoom, alt: "Comfortable room at Alpine Crest near Chail" },
+  { name: "Narkanda", distance: "60 km", slug: "/homestay-at-narkanda", image: food, alt: "Himachali food at Alpine Crest Homestay near Narkanda" },
 ];
 
 function HomePage() {
@@ -521,7 +523,7 @@ function HomePage() {
         <Reveal>
           <SectionHeading eyebrow="Nearby Destinations" title="Day trips from your balcony" />
         </Reveal>
-        <StaggerGroup className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-[repeat(4,minmax(0,1fr))]" stagger={0.08}>
+        <StaggerGroup className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3" stagger={0.08}>
           {destinations.map((d) => (
             <StaggerItem key={d.name}>
               <Link
