@@ -2,48 +2,56 @@ import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { Reveal, StaggerGroup, StaggerItem } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
-import { exterior, deluxeBalcony, standardRoom, deluxeRoom } from "@/lib/images";
+import { exterior, deluxeBalcony, standardRoom, deluxeRoom, lounge } from "@/lib/images";
 
 const stayCards = [
   {
-    to: "/homestay-in-theog",
+    to: "/homestay-at-theog",
     image: exterior,
-    heading: "Homestay in Theog",
+    heading: "Homestay at Theog",
     description:
       "A family-run homestay in Kathot near Theog — comfortable rooms, private balconies and warm local hospitality in the upper Shimla hills.",
     location: "Kathot · Theog · 6 km",
   },
   {
-    to: "/homestay-near-kufri",
+    to: "/homestay-at-kufri",
     image: deluxeBalcony,
-    heading: "Homestay Near Kufri",
+    heading: "Homestay at Kufri",
     description:
       "A peaceful alternative to staying in crowded Kufri. Mountain views, private balconies and easy access to Kufri's sights — a short drive away.",
     location: "Near Theog · 22 km to Kufri",
   },
   {
-    to: "/homestay-near-shimla",
+    to: "/homestay-at-shimla",
     image: deluxeRoom,
-    heading: "Homestay Near Shimla",
+    heading: "Homestay at Shimla",
     description:
       "A quiet mountain base about an hour from Shimla. Panoramic valley views, home-cooked food and easy day trips to Shimla and Kufri.",
     location: "Kathot · 38 km to Shimla",
   },
   {
-    to: "/places-to-stay-in-theog",
+    to: "/homestay-at-narkanda",
     image: standardRoom,
-    heading: "Places to Stay in Theog",
+    heading: "Homestay at Narkanda",
     description:
-      "Looking at where to stay in Theog? Alpine Crest offers mountain-view rooms, hot water, parking and Wi-Fi in a peaceful village setting.",
-    location: "Kathot · Theog",
+      "A peaceful base with easy access to Narkanda, Hatu Peak and the apple belt of Kotgarh — mountain views and home-cooked food.",
+    location: "Near Theog · 60 km to Narkanda",
   },
   {
-    to: "/stay-near-kufri",
+    to: "/homestay-at-fagu",
     image: deluxeBalcony,
-    heading: "Stay Near Kufri",
+    heading: "Homestay at Fagu",
     description:
-      "Peaceful mountain accommodation a short drive from Kufri. Enjoy the Nature Park and Mahasu Peak by day, return to a quiet balcony by evening.",
-    location: "Near Theog · 22 km to Kufri",
+      "A short drive from Fagu's quiet viewpoints and apple orchards — mountain-view rooms and private balconies in a peaceful setting.",
+    location: "Near Theog · 30 km to Fagu",
+  },
+  {
+    to: "/homestay-at-chail",
+    image: lounge,
+    heading: "Homestay at Chail",
+    description:
+      "A comfortable base with road access to Chail's wildlife sanctuary, the heritage Chail Palace and Sadhupul — mountain views and balconies.",
+    location: "Near Theog · 45 km to Chail",
   },
 ];
 
@@ -55,7 +63,7 @@ export function StaySection() {
           <SectionHeading
             eyebrow="Stay at Alpine Crest"
             title="Find your perfect mountain stay"
-            intro="Whether you're searching for a homestay in Theog, near Kufri or near Shimla, Alpine Crest offers the same peaceful mountain experience. Explore each option below."
+            intro="Whether you're searching for a homestay at Theog, Kufri, Shimla or beyond, Alpine Crest offers the same peaceful mountain experience. Explore each option below."
           />
         </Reveal>
 

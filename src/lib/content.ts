@@ -191,7 +191,7 @@ export const blogArticles: BlogArticle[] = [
     date: "2025-09-12",
     readTime: "6 min read",
     relatedLinks: [
-      { to: "/stay-near-theog", label: "Stay near Theog" },
+      { to: "/homestay-at-theog", label: "Homestay at Theog" },
       { to: "/places-to-visit/kufri", label: "Places to visit near Kufri" },
       { to: "/rooms", label: "Rooms at Alpine Crest" },
     ],
@@ -212,7 +212,7 @@ export const blogArticles: BlogArticle[] = [
     date: "2025-09-10",
     readTime: "7 min read",
     relatedLinks: [
-      { to: "/homestay-near-kufri", label: "Homestay near Kufri" },
+      { to: "/homestay-at-kufri", label: "Homestay at Kufri" },
       { to: "/places-to-visit/kufri", label: "Explore Kufri" },
       { to: "/rooms", label: "Rooms at Alpine Crest" },
     ],
@@ -233,7 +233,7 @@ export const blogArticles: BlogArticle[] = [
     date: "2025-09-08",
     readTime: "5 min read",
     relatedLinks: [
-      { to: "/stay-near-theog", label: "Stay near Theog" },
+      { to: "/homestay-at-theog", label: "Homestay at Theog" },
       { to: "/places-to-visit/theog", label: "Explore Theog" },
       { to: "/contact", label: "Check availability" },
     ],
@@ -254,8 +254,8 @@ export const blogArticles: BlogArticle[] = [
     date: "2025-09-05",
     readTime: "6 min read",
     relatedLinks: [
-      { to: "/homestay-near-kufri", label: "Homestay near Kufri" },
-      { to: "/homestay-near-shimla", label: "Homestay near Shimla" },
+      { to: "/homestay-at-kufri", label: "Homestay at Kufri" },
+      { to: "/homestay-at-shimla", label: "Homestay at Shimla" },
       { to: "/rooms", label: "Rooms at Alpine Crest" },
     ],
     body: [
@@ -274,8 +274,8 @@ export const blogArticles: BlogArticle[] = [
     date: "2025-09-03",
     readTime: "5 min read",
     relatedLinks: [
-      { to: "/homestay-near-shimla", label: "Homestay near Shimla" },
-      { to: "/stay-near-theog", label: "Stay near Theog" },
+      { to: "/homestay-at-shimla", label: "Homestay at Shimla" },
+      { to: "/homestay-at-theog", label: "Homestay at Theog" },
       { to: "/places-to-visit", label: "Places to visit" },
     ],
     body: [

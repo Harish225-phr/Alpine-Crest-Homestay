@@ -9,8 +9,8 @@ export const blogExtraArticles: BlogArticle[] = [
     date: "2025-08-28",
     readTime: "6 min read",
     relatedLinks: [
-      { to: "/homestay-in-theog", label: "Homestay in Theog" },
-      { to: "/places-to-stay-in-theog", label: "Places to Stay in Theog" },
+      { to: "/homestay-at-theog", label: "Homestay at Theog" },
+      { to: "/homestay-at-kufri", label: "Homestay at Kufri" },
       { to: "/rooms", label: "Rooms at Alpine Crest" },
     ],
     body: [
@@ -30,8 +30,7 @@ export const blogExtraArticles: BlogArticle[] = [
     date: "2025-08-15",
     readTime: "7 min read",
     relatedLinks: [
-      { to: "/homestay-near-kufri", label: "Homestay Near Kufri" },
-      { to: "/stay-near-kufri", label: "Stay Near Kufri" },
+      { to: "/homestay-at-kufri", label: "Homestay at Kufri" },
       { to: "/places-to-visit/kufri", label: "Explore Kufri" },
     ],
     body: [
@@ -51,8 +50,8 @@ export const blogExtraArticles: BlogArticle[] = [
     date: "2025-07-30",
     readTime: "6 min read",
     relatedLinks: [
-      { to: "/homestay-near-shimla", label: "Homestay Near Shimla" },
-      { to: "/stay-near-theog", label: "Stay Near Theog" },
+      { to: "/homestay-at-shimla", label: "Homestay at Shimla" },
+      { to: "/homestay-at-theog", label: "Homestay at Theog" },
       { to: "/places-to-visit/shimla", label: "Explore Shimla" },
     ],
     body: [
@@ -71,7 +70,7 @@ export const blogExtraArticles: BlogArticle[] = [
     date: "2025-07-12",
     readTime: "8 min read",
     relatedLinks: [
-      { to: "/homestay-in-theog", label: "Homestay in Theog" },
+      { to: "/homestay-at-theog", label: "Homestay at Theog" },
       { to: "/places-to-visit/theog", label: "Explore Theog" },
       { to: "/rooms", label: "Rooms at Alpine Crest" },
     ],
@@ -92,8 +91,7 @@ export const blogExtraArticles: BlogArticle[] = [
     date: "2025-06-25",
     readTime: "8 min read",
     relatedLinks: [
-      { to: "/homestay-near-kufri", label: "Homestay Near Kufri" },
-      { to: "/stay-near-kufri", label: "Stay Near Kufri" },
+      { to: "/homestay-at-kufri", label: "Homestay at Kufri" },
       { to: "/places-to-visit/kufri", label: "Explore Kufri" },
     ],
     body: [
@@ -113,8 +111,8 @@ export const blogExtraArticles: BlogArticle[] = [
     date: "2025-06-08",
     readTime: "6 min read",
     relatedLinks: [
-      { to: "/homestay-near-shimla", label: "Homestay Near Shimla" },
-      { to: "/stay-near-kufri", label: "Stay Near Kufri" },
+      { to: "/homestay-at-shimla", label: "Homestay at Shimla" },
+      { to: "/homestay-at-kufri", label: "Homestay at Kufri" },
       { to: "/places-to-visit/kufri", label: "Explore Kufri" },
     ],
     body: [
@@ -134,8 +132,8 @@ export const blogExtraArticles: BlogArticle[] = [
     date: "2025-05-20",
     readTime: "5 min read",
     relatedLinks: [
-      { to: "/homestay-in-theog", label: "Homestay in Theog" },
-      { to: "/stay-near-kufri", label: "Stay Near Kufri" },
+      { to: "/homestay-at-theog", label: "Homestay at Theog" },
+      { to: "/homestay-at-kufri", label: "Homestay at Kufri" },
       { to: "/places-to-visit/kufri", label: "Explore Kufri" },
     ],
     body: [
@@ -154,8 +152,7 @@ export const blogExtraArticles: BlogArticle[] = [
     date: "2025-05-05",
     readTime: "6 min read",
     relatedLinks: [
-      { to: "/homestay-near-kufri", label: "Homestay Near Kufri" },
-      { to: "/stay-near-kufri", label: "Stay Near Kufri" },
+      { to: "/homestay-at-kufri", label: "Homestay at Kufri" },
       { to: "/places-to-visit/kufri", label: "Explore Kufri" },
     ],
     body: [
@@ -175,8 +172,8 @@ export const blogExtraArticles: BlogArticle[] = [
     date: "2025-04-18",
     readTime: "6 min read",
     relatedLinks: [
-      { to: "/homestay-near-shimla", label: "Homestay Near Shimla" },
-      { to: "/homestay-near-theog", label: "Homestay Near Theog" },
+      { to: "/homestay-at-shimla", label: "Homestay at Shimla" },
+      { to: "/homestay-at-theog", label: "Homestay at Theog" },
       { to: "/rooms", label: "Rooms at Alpine Crest" },
     ],
     body: [

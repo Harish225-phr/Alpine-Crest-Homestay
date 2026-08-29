@@ -87,10 +87,10 @@ const whyStay = [
 ];
 
 const destinations = [
-  { name: "Theog Town", distance: "6 km", slug: "/places-to-visit", image: exterior, alt: "Mountain landscape near Theog, Himachal Pradesh" },
-  { name: "Kufri", distance: "22 km", slug: "/homestay-near-kufri", image: deluxeBalcony, alt: "Mountain view near Kufri from Alpine Crest Homestay" },
-  { name: "Shimla Mall Road", distance: "38 km", slug: "/homestay-near-shimla", image: lounge, alt: "Lounge at Alpine Crest Homestay near Shimla" },
-  { name: "Chail", distance: "45 km", slug: "/places-to-visit", image: standardRoom, alt: "Comfortable room at Alpine Crest near Chail" },
+  { name: "Theog Town", distance: "6 km", slug: "/homestay-at-theog", image: exterior, alt: "Mountain landscape near Theog, Himachal Pradesh" },
+  { name: "Kufri", distance: "22 km", slug: "/homestay-at-kufri", image: deluxeBalcony, alt: "Mountain view near Kufri from Alpine Crest Homestay" },
+  { name: "Shimla Mall Road", distance: "38 km", slug: "/homestay-at-shimla", image: lounge, alt: "Lounge at Alpine Crest Homestay near Shimla" },
+  { name: "Chail", distance: "45 km", slug: "/homestay-at-chail", image: standardRoom, alt: "Comfortable room at Alpine Crest near Chail" },
 ];
 
 function HomePage() {
