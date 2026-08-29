@@ -164,7 +164,7 @@ function HomePage() {
                 </CallLink>
                 <Link
                   to="/rooms"
-                  className="inline-flex items-center justify-center rounded-full border border-sand/50 px-6 py-3 text-sm font-semibold text-sand transition-colors hover:bg-sand/15"
+                  className="inline-flex items-center justify-center rounded-full border border-sand/50 px-6 py-3 text-sm font-semibold text-sand hover:bg-sand/15"
                 >
                   View Rooms
                 </Link>
