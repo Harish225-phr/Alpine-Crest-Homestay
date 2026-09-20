@@ -6,14 +6,6 @@ import { exterior, deluxeBalcony, standardRoom, deluxeRoom, lounge, rooms1, room
 
 const stayCards = [
   {
-    to: "/homestay-in-kathot",
-    image: lounge,
-    heading: "Homestay in Kathot",
-    description:
-      "A peaceful village homestay located right in Kathot. Wake up to mountain views and experience warm, home-cooked Himachali hospitality.",
-    location: "Village Kathot · Theog",
-  },
-  {
     to: "/homestay-in-theog",
     image: rooms1,
     heading: "Homestay in Theog",
@@ -36,6 +28,14 @@ const stayCards = [
     description:
       "A quiet mountain base for exploring Shimla. Panoramic valley views, home-cooked food and easy day trips into town.",
     location: "Approx 38 km to Shimla",
+  },
+  {
+    to: "/homestay-in-kathot",
+    image: lounge,
+    heading: "Homestay in Kathot",
+    description:
+      "A peaceful village homestay located right in Kathot. Wake up to mountain views and experience warm, home-cooked Himachali hospitality.",
+    location: "Village Kathot · Theog",
   },
   {
     to: "/homestay-near-fagu",
@@ -69,8 +69,8 @@ export function StaySection() {
       <div className="container-page">
         <Reveal>
           <SectionHeading
-            eyebrow="Stay Near Theog & Explore the Upper Shimla Hills"
-            title="Find your perfect mountain stay"
+            eyebrow="Discover the region"
+            title="Explore Stays & Destinations Around Theog"
             intro="Alpine Crest Homestay is your basecamp in Village Kathot. Whether you're visiting Kufri, Shimla, or exploring Narkanda, return each evening to a peaceful mountain home."
           />
         </Reveal>

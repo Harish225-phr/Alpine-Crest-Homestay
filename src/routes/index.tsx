@@ -146,7 +146,7 @@ function HomePage() {
                 transition={{ duration: 0.7, delay: 0.1 }}
                 className="mt-4 max-w-3xl font-display text-4xl leading-[1.08] text-sand sm:text-6xl"
               >
-                Mountain View Homestay in Theog, Himachal Pradesh
+                Best Mountain View Homestay in Theog, Himachal Pradesh
               </motion.h1>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -154,10 +154,7 @@ function HomePage() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="mt-5 max-w-xl text-base leading-relaxed text-sand/85"
               >
-                Escape to a peaceful mountain retreat in Kathot near Theog,
-                Himachal Pradesh. Enjoy panoramic mountain views, private
-                balconies, home-cooked Himachali food and convenient access to
-                Theog, Kufri and Shimla.
+                Stay in a peaceful mountain homestay in Kathot near Theog, with panoramic Himalayan views, private balconies, home-cooked Himachali food and easy access to Kufri and Shimla.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -165,16 +162,12 @@ function HomePage() {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="mt-8 flex flex-wrap gap-3"
               >
-                <WhatsAppLink message={WA.general}>Book on WhatsApp</WhatsAppLink>
-                <CallLink variant="outline" className="border-sand/50 text-sand hover:bg-sand/15">
-                  Call Now
+                <CallLink variant="outline" className="border-sand/50 bg-sand/15 text-sand hover:bg-sand/25">
+                  Check Availability
                 </CallLink>
-                <Link
-                  to="/rooms"
-                  className="inline-flex items-center justify-center rounded-full border border-sand/50 px-6 py-3 text-sm font-semibold text-sand transition-colors hover:bg-sand/15"
-                >
-                  View Rooms
-                </Link>
+                <WhatsAppLink message={WA.general}>
+                  WhatsApp Booking
+                </WhatsAppLink>
               </motion.div>
 
               <motion.ul
@@ -450,15 +443,27 @@ function HomePage() {
           <Reveal>
             <h2 className="font-display text-3xl text-pine sm:text-4xl">Looking for the Best Homestay in Theog?</h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground text-left sm:text-center">
-              Choosing the right homestay in Theog is about more than just a room. Travellers often look for peaceful surroundings, comfortable rooms, mountain views, convenient access to nearby attractions, local hospitality and an easy booking experience. Alpine Crest Homestay brings these elements together in a peaceful location in Kathot near Theog.
+              Choosing the right homestay in Theog is about more than finding a room. Travellers look for peaceful surroundings, comfortable accommodation, beautiful mountain views, warm hospitality and convenient access to nearby places. Alpine Crest Homestay brings these experiences together in Kathot near Theog.
             </p>
-            <ul className="mt-8 flex flex-wrap justify-center gap-4 text-sm font-medium text-moss">
-              <li className="flex items-center gap-1.5 bg-secondary/80 px-4 py-2 rounded-full"><Check className="h-4 w-4" /> Mountain surroundings</li>
-              <li className="flex items-center gap-1.5 bg-secondary/80 px-4 py-2 rounded-full"><Check className="h-4 w-4" /> Comfortable accommodation</li>
-              <li className="flex items-center gap-1.5 bg-secondary/80 px-4 py-2 rounded-full"><Check className="h-4 w-4" /> Local hospitality</li>
-              <li className="flex items-center gap-1.5 bg-secondary/80 px-4 py-2 rounded-full"><Check className="h-4 w-4" /> Nearby attractions</li>
-              <li className="flex items-center gap-1.5 bg-secondary/80 px-4 py-2 rounded-full"><Check className="h-4 w-4" /> Direct WhatsApp booking</li>
-            </ul>
+            <div className="mt-10 text-left sm:text-center">
+              <h3 className="text-xl font-semibold text-pine">Why guests choose Alpine Crest</h3>
+              <ul className="mt-6 flex flex-wrap justify-center gap-3 text-sm font-medium text-moss">
+                {[
+                  "Mountain views",
+                  "Peaceful location",
+                  "Comfortable rooms",
+                  "Local hospitality",
+                  "Home-cooked Himachali food",
+                  "Near Kufri",
+                  "Near Shimla",
+                  "Direct booking"
+                ].map((item) => (
+                  <li key={item} className="flex items-center gap-1.5 bg-secondary/80 px-4 py-2 rounded-full shadow-sm">
+                    <Check className="h-4 w-4" /> {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </Reveal>
         </div>
       </section>
