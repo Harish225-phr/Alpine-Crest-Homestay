@@ -661,11 +661,23 @@ function HomePage() {
             />
           </Reveal>
           <StaggerGroup className="mt-12 grid gap-6 md:grid-cols-3" stagger={0.1}>
-            {/* Owner can replace these with actual Google/Airbnb reviews later */}
+            {/* Real Google reviews */}
             {[
-              { text: "A peaceful stay with excellent home-cooked food and great views of the valley. Highly recommended for families.", author: "Guest Review", source: "Google" },
-              { text: "Beautiful location away from the crowd. The hosts are very welcoming and the rooms are clean and comfortable.", author: "Guest Review", source: "Google" },
-              { text: "Perfect weekend getaway near Shimla. Loved the balcony views and the authentic Himachali hospitality.", author: "Guest Review", source: "Google" },
+              { 
+                text: "Had a wonderful stay at Alpine Crest Homestay! The rooms were exceptionally clean, spacious, and beautifully designed with wooden interiors... The balcony offered breathtaking valley and sunset views.", 
+                author: "Sanjeev Mann", 
+                source: "Google" 
+              },
+              { 
+                text: "Had a great trip with friends all thanks to the sahil verma working there... one of the best views, food, rooms and services in the whole shimla.", 
+                author: "Shaurya Thakur", 
+                source: "Google" 
+              },
+              { 
+                text: "Had a really pleasant stay at Alpine Crest Homestay. The room was clean and comfortable, and the mountain view from the property was beautiful. The location is peaceful and away from the usual crowd.", 
+                author: "Nancy Soni", 
+                source: "Google" 
+              },
             ].map((review, i) => (
               <StaggerItem key={i}>
                 <div className="h-full rounded-2xl border border-border bg-card p-6 shadow-soft flex flex-col">
