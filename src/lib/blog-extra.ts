@@ -2,8 +2,8 @@ import type { BlogArticle } from "@/lib/content";
 
 export const blogExtraArticles: BlogArticle[] = [
   {
-    slug: "best-places-to-stay-near-theog",
-    title: "Best Places to Stay Near Theog, Himachal Pradesh",
+    slug: "best-places-to-stay-in-theog",
+    title: "Best Places to Stay in Theog, Himachal Pradesh",
     excerpt:
       "From quiet ridge-top homestays to apple-belt villages, here is a practical look at the best places to stay near Theog for a peaceful mountain trip.",
     date: "2025-08-28",
@@ -183,6 +183,108 @@ export const blogExtraArticles: BlogArticle[] = [
       "There are a few directions worth considering. Mashobra, about 12 km west of Shimla, is quiet and green but leans toward the higher end. Chail, further out at roughly 45 km, is very peaceful but adds driving time. The Theog ridge, about an hour east of Shimla on NH-5, is a strong choice — it is high enough for real valley views, has straightforward road access, and sits conveniently between Shimla and Kufri so you can day-trip to both.",
       "Alpine Crest Homestay in Village Kathot near Theog is built around exactly this idea. It sits on a quiet ridge above the highway, with private balconies that open onto the deodar valley and catch the sunrise over the Shali Tibba range. It is roughly an hour from Shimla, so you can spend a day walking the Mall Road and visiting Christ Church, then drive back to a quiet room with mountain air and home-cooked food. For travellers who want the Shimla experience without the Shimla crowds, this approach is hard to beat.",
       "The short version: if peace and mountain views are your priority, look beyond Shimla town itself. A ridge-top homestay in the Theog area gives you the landscape that made Shimla famous, with the quiet that Shimla itself has largely lost — and it keeps both Shimla and Kufri within easy reach for the days you do want to sightsee.",
+    ],
+  },
+  {
+    slug: "best-homestays-in-theog-for-a-peaceful-mountain-stay",
+    title: "Best Homestays in Theog for a Peaceful Mountain Stay",
+    excerpt:
+      "Looking for a peaceful homestay in Theog? Here is what makes the Theog ridge such a compelling choice for a mountain retreat.",
+    date: "2025-08-20",
+    readTime: "5 min read",
+    relatedLinks: [
+      { to: "/homestay-in-theog", label: "Homestay in Theog" },
+      { to: "/rooms", label: "Rooms at Alpine Crest" },
+    ],
+    body: [
+      "Theog is quickly becoming a favourite for travellers seeking a peaceful mountain stay without the commercialization of nearby Shimla and Kufri.",
+      "The best homestays in Theog are located just off the main NH-5 highway, in quiet villages like Kathot. Here, you wake up to panoramic mountain views and the sound of wind through the deodar trees, rather than traffic.",
+      "When choosing a homestay, look for properties that offer genuine local hospitality and home-cooked Himachali food. Alpine Crest Homestay is an excellent option, providing comfortable mountain-view rooms, private balconies, and easy access to both Kufri and Shimla while maintaining a perfectly tranquil environment."
+    ],
+  },
+  {
+    slug: "where-to-stay-in-theog-near-kufri",
+    title: "Where to Stay in Theog Near Kufri",
+    excerpt:
+      "Avoid the Kufri crowds by staying in a peaceful homestay in Theog, just a short drive away from all the attractions.",
+    date: "2025-08-10",
+    readTime: "4 min read",
+    relatedLinks: [
+      { to: "/homestay-near-kufri", label: "Homestay Near Kufri" },
+      { to: "/homestay-in-theog", label: "Homestay in Theog" },
+    ],
+    body: [
+      "Kufri is a fantastic day-trip destination, but its popularity means it can get very crowded, especially during the snow season and summer holidays.",
+      "The smartest way to experience Kufri is to stay nearby in Theog. The drive between Theog and Kufri is short and scenic, passing through the beautiful orchards of Fagu.",
+      "Alpine Crest Homestay in Kathot near Theog offers a peaceful alternative. You can spend the morning exploring the Himalayan Nature Park in Kufri and then retreat to your private balcony overlooking the Shali Tibba range in the afternoon."
+    ],
+  },
+  {
+    slug: "best-mountain-view-stays-near-shimla",
+    title: "Best Mountain View Stays Near Shimla",
+    excerpt:
+      "Discover the best mountain view stays near Shimla for a relaxing and picturesque Himalayan holiday.",
+    date: "2025-07-15",
+    readTime: "6 min read",
+    relatedLinks: [
+      { to: "/homestay-near-shimla", label: "Homestay Near Shimla" },
+      { to: "/mountain-view-homestay-theog", label: "Mountain View Homestay" },
+    ],
+    body: [
+      "Shimla offers colonial charm, but if you want uninterrupted mountain views and serene sunrises, you need to look slightly further afield.",
+      "The Theog ridge, about an hour east of Shimla, provides some of the most spectacular, unobstructed valley views in the region.",
+      "Alpine Crest Homestay offers an exceptional mountain view stay near Shimla. The east-facing Deluxe Rooms feature private balconies where you can watch the sunrise over the Himalayas, offering a level of tranquility that is hard to find in Shimla town."
+    ],
+  },
+  {
+    slug: "things-to-do-in-theog",
+    title: "Things to Do in Theog, Himachal Pradesh",
+    excerpt:
+      "Explore the best activities and local experiences in and around the quiet mountain town of Theog.",
+    date: "2025-06-10",
+    readTime: "5 min read",
+    relatedLinks: [
+      { to: "/homestay-in-theog", label: "Homestay in Theog" },
+      { to: "/places-to-visit/fagu", label: "Explore Fagu" },
+    ],
+    body: [
+      "Theog is less about ticking off a list of tourist attractions and more about enjoying the slow pace of mountain life.",
+      "Take a walk through the apple orchards in Kathot, enjoy the panoramic views from the Theog ridge, or visit the ancient local temples dotting the surrounding villages.",
+      "It also serves as a perfect hub for day trips: head to Kufri for the Nature Park, Fagu for its scenic landscapes, or Narkanda for the Hatu Peak trek."
+    ],
+  },
+  {
+    slug: "shimla-to-theog-travel-guide",
+    title: "Shimla to Theog Travel Guide",
+    excerpt:
+      "A complete guide to the scenic drive from Shimla to Theog, including road conditions, transport options, and what to expect.",
+    date: "2025-05-15",
+    readTime: "4 min read",
+    relatedLinks: [
+      { to: "/homestay-near-shimla", label: "Homestay Near Shimla" },
+      { to: "/homestay-in-theog", label: "Homestay in Theog" },
+    ],
+    body: [
+      "The journey from Shimla to Theog covers about 30 kilometers on NH-5 and typically takes around an hour by car.",
+      "The road is well-maintained and offers beautiful views as you leave the dense Shimla traffic behind and enter the quieter pine and cedar forests of the upper hills.",
+      "You can easily hire a taxi from Shimla, or take one of the frequent local buses. Once you arrive, Alpine Crest Homestay in Kathot provides a perfect, peaceful base just off the highway."
+    ],
+  },
+  {
+    slug: "weekend-trip-to-theog-from-chandigarh",
+    title: "Weekend Trip to Theog from Chandigarh",
+    excerpt:
+      "Plan the perfect weekend escape from Chandigarh to the peaceful mountains of Theog.",
+    date: "2025-04-10",
+    readTime: "5 min read",
+    relatedLinks: [
+      { to: "/homestay-in-theog", label: "Homestay in Theog" },
+      { to: "/rooms", label: "View Rooms" },
+    ],
+    body: [
+      "Theog is an ideal weekend getaway from Chandigarh. The drive takes about 4.5 to 5 hours via the Himalayan Expressway and NH-5.",
+      "Leave early on Friday or Saturday morning to avoid the traffic around Kalka and Shimla. By lunchtime, you can be relaxing on a balcony with mountain views.",
+      "Spend your weekend enjoying home-cooked Himachali food, walking through local orchards, and breathing in the fresh mountain air at Alpine Crest Homestay before heading back on Sunday afternoon."
     ],
   },
 ];

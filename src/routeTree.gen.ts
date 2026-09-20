@@ -15,12 +15,12 @@ import { Route as AmenitiesRouteImport } from './routes/amenities'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as GalleryRouteImport } from './routes/gallery'
 import { Route as HomestayInKathotRouteImport } from './routes/homestay-in-kathot'
+import { Route as HomestayInTheogRouteImport } from './routes/homestay-in-theog'
 import { Route as HomestayNearChailRouteImport } from './routes/homestay-near-chail'
 import { Route as HomestayNearFaguRouteImport } from './routes/homestay-near-fagu'
 import { Route as HomestayNearKufriRouteImport } from './routes/homestay-near-kufri'
 import { Route as HomestayNearNarkandaRouteImport } from './routes/homestay-near-narkanda'
 import { Route as HomestayNearShimlaRouteImport } from './routes/homestay-near-shimla'
-import { Route as HomestayNearTheogRouteImport } from './routes/homestay-near-theog'
 import { Route as LocationRouteImport } from './routes/location'
 import { Route as MountainViewHomestayTheogRouteImport } from './routes/mountain-view-homestay-theog'
 import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
@@ -61,6 +61,11 @@ const HomestayInKathotRoute = HomestayInKathotRouteImport.update({
   path: '/homestay-in-kathot',
   getParentRoute: () => rootRouteImport,
 } as any)
+const HomestayInTheogRoute = HomestayInTheogRouteImport.update({
+  id: '/homestay-in-theog',
+  path: '/homestay-in-theog',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const HomestayNearChailRoute = HomestayNearChailRouteImport.update({
   id: '/homestay-near-chail',
   path: '/homestay-near-chail',
@@ -84,11 +89,6 @@ const HomestayNearNarkandaRoute = HomestayNearNarkandaRouteImport.update({
 const HomestayNearShimlaRoute = HomestayNearShimlaRouteImport.update({
   id: '/homestay-near-shimla',
   path: '/homestay-near-shimla',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const HomestayNearTheogRoute = HomestayNearTheogRouteImport.update({
-  id: '/homestay-near-theog',
-  path: '/homestay-near-theog',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LocationRoute = LocationRouteImport.update({
@@ -145,12 +145,12 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/gallery': typeof GalleryRoute
   '/homestay-in-kathot': typeof HomestayInKathotRoute
+  '/homestay-in-theog': typeof HomestayInTheogRoute
   '/homestay-near-chail': typeof HomestayNearChailRoute
   '/homestay-near-fagu': typeof HomestayNearFaguRoute
   '/homestay-near-kufri': typeof HomestayNearKufriRoute
   '/homestay-near-narkanda': typeof HomestayNearNarkandaRoute
   '/homestay-near-shimla': typeof HomestayNearShimlaRoute
-  '/homestay-near-theog': typeof HomestayNearTheogRoute
   '/location': typeof LocationRoute
   '/mountain-view-homestay-theog': typeof MountainViewHomestayTheogRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
@@ -168,12 +168,12 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/gallery': typeof GalleryRoute
   '/homestay-in-kathot': typeof HomestayInKathotRoute
+  '/homestay-in-theog': typeof HomestayInTheogRoute
   '/homestay-near-chail': typeof HomestayNearChailRoute
   '/homestay-near-fagu': typeof HomestayNearFaguRoute
   '/homestay-near-kufri': typeof HomestayNearKufriRoute
   '/homestay-near-narkanda': typeof HomestayNearNarkandaRoute
   '/homestay-near-shimla': typeof HomestayNearShimlaRoute
-  '/homestay-near-theog': typeof HomestayNearTheogRoute
   '/location': typeof LocationRoute
   '/mountain-view-homestay-theog': typeof MountainViewHomestayTheogRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
@@ -192,12 +192,12 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/gallery': typeof GalleryRoute
   '/homestay-in-kathot': typeof HomestayInKathotRoute
+  '/homestay-in-theog': typeof HomestayInTheogRoute
   '/homestay-near-chail': typeof HomestayNearChailRoute
   '/homestay-near-fagu': typeof HomestayNearFaguRoute
   '/homestay-near-kufri': typeof HomestayNearKufriRoute
   '/homestay-near-narkanda': typeof HomestayNearNarkandaRoute
   '/homestay-near-shimla': typeof HomestayNearShimlaRoute
-  '/homestay-near-theog': typeof HomestayNearTheogRoute
   '/location': typeof LocationRoute
   '/mountain-view-homestay-theog': typeof MountainViewHomestayTheogRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
@@ -217,12 +217,12 @@ export interface FileRouteTypes {
     | '/contact'
     | '/gallery'
     | '/homestay-in-kathot'
+    | '/homestay-in-theog'
     | '/homestay-near-chail'
     | '/homestay-near-fagu'
     | '/homestay-near-kufri'
     | '/homestay-near-narkanda'
     | '/homestay-near-shimla'
-    | '/homestay-near-theog'
     | '/location'
     | '/mountain-view-homestay-theog'
     | '/privacy-policy'
@@ -240,12 +240,12 @@ export interface FileRouteTypes {
     | '/contact'
     | '/gallery'
     | '/homestay-in-kathot'
+    | '/homestay-in-theog'
     | '/homestay-near-chail'
     | '/homestay-near-fagu'
     | '/homestay-near-kufri'
     | '/homestay-near-narkanda'
     | '/homestay-near-shimla'
-    | '/homestay-near-theog'
     | '/location'
     | '/mountain-view-homestay-theog'
     | '/privacy-policy'
@@ -263,12 +263,12 @@ export interface FileRouteTypes {
     | '/contact'
     | '/gallery'
     | '/homestay-in-kathot'
+    | '/homestay-in-theog'
     | '/homestay-near-chail'
     | '/homestay-near-fagu'
     | '/homestay-near-kufri'
     | '/homestay-near-narkanda'
     | '/homestay-near-shimla'
-    | '/homestay-near-theog'
     | '/location'
     | '/mountain-view-homestay-theog'
     | '/privacy-policy'
@@ -287,12 +287,12 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   GalleryRoute: typeof GalleryRoute
   HomestayInKathotRoute: typeof HomestayInKathotRoute
+  HomestayInTheogRoute: typeof HomestayInTheogRoute
   HomestayNearChailRoute: typeof HomestayNearChailRoute
   HomestayNearFaguRoute: typeof HomestayNearFaguRoute
   HomestayNearKufriRoute: typeof HomestayNearKufriRoute
   HomestayNearNarkandaRoute: typeof HomestayNearNarkandaRoute
   HomestayNearShimlaRoute: typeof HomestayNearShimlaRoute
-  HomestayNearTheogRoute: typeof HomestayNearTheogRoute
   LocationRoute: typeof LocationRoute
   MountainViewHomestayTheogRoute: typeof MountainViewHomestayTheogRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
@@ -348,6 +348,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof HomestayInKathotRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/homestay-in-theog': {
+      id: '/homestay-in-theog'
+      path: '/homestay-in-theog'
+      fullPath: '/homestay-in-theog'
+      preLoaderRoute: typeof HomestayInTheogRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/homestay-near-chail': {
       id: '/homestay-near-chail'
       path: '/homestay-near-chail'
@@ -381,13 +388,6 @@ declare module '@tanstack/react-router' {
       path: '/homestay-near-shimla'
       fullPath: '/homestay-near-shimla'
       preLoaderRoute: typeof HomestayNearShimlaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/homestay-near-theog': {
-      id: '/homestay-near-theog'
-      path: '/homestay-near-theog'
-      fullPath: '/homestay-near-theog'
-      preLoaderRoute: typeof HomestayNearTheogRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/location': {
@@ -463,12 +463,12 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   GalleryRoute: GalleryRoute,
   HomestayInKathotRoute: HomestayInKathotRoute,
+  HomestayInTheogRoute: HomestayInTheogRoute,
   HomestayNearChailRoute: HomestayNearChailRoute,
   HomestayNearFaguRoute: HomestayNearFaguRoute,
   HomestayNearKufriRoute: HomestayNearKufriRoute,
   HomestayNearNarkandaRoute: HomestayNearNarkandaRoute,
   HomestayNearShimlaRoute: HomestayNearShimlaRoute,
-  HomestayNearTheogRoute: HomestayNearTheogRoute,
   LocationRoute: LocationRoute,
   MountainViewHomestayTheogRoute: MountainViewHomestayTheogRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,

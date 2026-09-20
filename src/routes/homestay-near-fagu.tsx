@@ -182,7 +182,7 @@ function HomestayInFaguPage() {
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
               { name: "Kufri", to: "/homestay-near-kufri" },
-              { name: "Theog", to: "/homestay-near-theog" },
+              { name: "Theog", to: "/homestay-in-theog" },
               { name: "Fagu", to: "/homestay-near-fagu" },
               { name: "Shimla", to: "/homestay-near-shimla" },
             ].map((d) => (

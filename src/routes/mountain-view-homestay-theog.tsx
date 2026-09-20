@@ -15,13 +15,13 @@ export const Route = createFileRoute("/mountain-view-homestay-theog")({
       {
         name: "description",
         content:
-          "Looking for a mountain view homestay in Theog? Alpine Crest Homestay in Kathot near Theog is a peaceful base with easy access to Narkanda, Hatu Peak and the apple belt of Kotgarh — mountain views, balconies and home-cooked food.",
+          "Looking for a mountain view homestay in Theog? Alpine Crest Homestay in Kathot near Theog is a peaceful base with beautiful surroundings, sunrise views, private balconies and home-cooked food.",
       },
       { property: "og:title", content: "Mountain View Homestay in Theog | Alpine Crest" },
       {
         property: "og:description",
         content:
-          "Peaceful homestay near Narkanda. Mountain views, private balconies, home-cooked food, easy access to Hatu Peak.",
+          "Peaceful homestay with mountain views. Private balconies, home-cooked food, sunrise over the Himalayas.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://alpinecresthomestay.com/mountain-view-homestay-theog" },
@@ -51,10 +51,10 @@ function HomestayAtNarkandaPage() {
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
             If you are searching for a mountain view homestay in Theog, Alpine
             Crest Homestay is a peaceful mountain retreat in Village Kathot near
-            Theog, with easy access to Narkanda along NH-5. Narkanda is known for
-            Hatu Peak, skiing in winter and the apple orchards of Kotgarh — and our
-            homestay is a quiet, comfortable base for exploring it all, with
-            mountain-view rooms, private balconies and home-cooked Himachali food.
+            Theog. We offer uninterrupted views of the Shali Tibba range, breathtaking 
+            sunrises directly from your room, and a peaceful atmosphere surrounded by 
+            apple orchards and pine forests. Enjoy your morning tea on a private 
+            balcony and experience true mountain tranquility.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <WhatsAppLink message={WA.location}>Check Availability on WhatsApp</WhatsAppLink>
@@ -183,7 +183,7 @@ function HomestayAtNarkandaPage() {
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
               { name: "Narkanda", to: "/places-to-visit/narkanda" },
-              { name: "Theog", to: "/homestay-near-theog" },
+              { name: "Theog", to: "/homestay-in-theog" },
               { name: "Fagu", to: "/homestay-in-kathot" },
               { name: "Shimla", to: "/homestay-near-shimla" },
             ].map((d) => (

@@ -14,7 +14,7 @@ const stayCards = [
     location: "Village Kathot · Theog",
   },
   {
-    to: "/homestay-near-theog",
+    to: "/homestay-in-theog",
     image: rooms1,
     heading: "Homestay in Theog",
     description:

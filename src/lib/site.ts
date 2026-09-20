@@ -24,7 +24,7 @@ export function waLink(message: string) {
 }
 
 export const WA = {
-  general: "Hello Alpine Crest Homestay, I would like to check room availability.",
+  general: "Hello Alpine Crest Homestay, I found you online and would like to check room availability for my stay in Theog.",
   standard:
     "Hello Alpine Crest Homestay, I am interested in the Standard Room. Please share availability and price.",
   deluxe:
@@ -97,6 +97,11 @@ export const lodgingSchema = {
     latitude: SITE.latitude,
     longitude: SITE.longitude,
   },
+  url: "https://alpinecresthomestay.com",
+  image: "https://alpinecresthomestay.com/images/exterior.webp",
+  sameAs: [
+    "https://maps.app.goo.gl/BmvDx9UcSdu7zsML8"
+  ],
   amenityFeature: [
     "Free Wi-Fi",
     "Private Parking",

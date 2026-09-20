@@ -9,29 +9,29 @@ import { SectionHeading } from "@/components/site/SectionHeading";
 import { MapEmbed } from "@/components/site/MapEmbed";
 import { exterior, standardRoom, deluxeBalcony } from "@/lib/images";
 
-export const Route = createFileRoute("/homestay-near-theog")({
+export const Route = createFileRoute("/homestay-in-theog")({
   head: () => ({
     meta: [
-      { title: "Homestay in Theog, Himachal Pradesh | Alpine Crest Homestay" },
+      { title: "Best Homestay in Theog, Himachal Pradesh | Alpine Crest" },
       {
         name: "description",
         content:
           "Looking for a homestay in Theog? Alpine Crest Homestay in Kathot near Theog offers mountain-view rooms, private balconies, home-cooked Himachali food and warm family hospitality.",
       },
-      { property: "og:title", content: "Homestay in Theog, Himachal Pradesh | Alpine Crest Homestay" },
+      { property: "og:title", content: "Best Homestay in Theog, Himachal Pradesh | Alpine Crest" },
       {
         property: "og:description",
         content:
-          "Peaceful homestay in Kathot near Theog, Himachal Pradesh. Mountain views, private balconies, home-cooked food.",
+          "Searching for a peaceful homestay in Theog? Alpine Crest Homestay is located in Kathot near Theog and offers a comfortable mountain stay with beautiful surroundings, local hospitality and convenient access to Kufri and Shimla.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://alpinecresthomestay.com/homestay-near-theog" },
+      { property: "og:url", content: "https://alpinecresthomestay.com/homestay-in-theog" },
     ],
-    links: [{ rel: "canonical", href: "https://alpinecresthomestay.com/homestay-near-theog" }],
+    links: [{ rel: "canonical", href: "https://alpinecresthomestay.com/homestay-in-theog" }],
     scripts: [
       breadcrumbSchema([
         { name: "Home", path: "/" },
-        { name: "Homestay in Theog", path: "/homestay-near-theog" },
+        { name: "Homestay in Theog", path: "/homestay-in-theog" },
       ]),
     ],
   }),
@@ -50,11 +50,10 @@ function HomestayAtTheogPage() {
             Homestay in Theog with Mountain Views
           </h1>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
-            If you are searching for a peaceful homestay in Theog, Alpine Crest
-            Homestay is a family-run mountain retreat in Village Kathot, just off
-            Majhar Road near Theog. With panoramic valley views, private balconies,
-            home-cooked Himachali meals and warm local hospitality, it is a
-            peaceful base for exploring Theog, Kufri and the surrounding hills.
+            If you are searching for a peaceful homestay in Theog, Himachal Pradesh, Alpine Crest
+          Homestay is located in Kathot near Theog and offers a comfortable mountain stay
+          with beautiful surroundings, local hospitality and convenient access to
+          Kufri and Shimla.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <WhatsAppLink message={WA.location}>Check Availability on WhatsApp</WhatsAppLink>

@@ -11,13 +11,13 @@ import { exterior, deluxeBalcony, standardRoom } from "@/lib/images";
 export const Route = createFileRoute("/homestay-near-shimla")({
   head: () => ({
     meta: [
-      { title: "Mountain Homestay Near Shimla | Alpine Crest" },
+      { title: "Peaceful Homestay Near Shimla | Alpine Crest" },
       {
         name: "description",
         content:
           "Looking for a mountain homestay near Shimla? Alpine Crest Homestay is a peaceful mountain retreat in Kathot near Theog, about an hour from Shimla. Mountain views, private balconies, home-cooked food and easy access to Shimla.",
       },
-      { property: "og:title", content: "Mountain Homestay Near Shimla | Alpine Crest" },
+      { property: "og:title", content: "Peaceful Homestay Near Shimla | Alpine Crest" },
       {
         property: "og:description",
         content:
@@ -46,15 +46,11 @@ function HomestayAtShimlaPage() {
         <div>
           <p className="eyebrow">Homestay Near Shimla</p>
           <h1 className="mt-3 text-4xl leading-[1.1] sm:text-5xl">
-            Peaceful Mountain Homestay Near Shimla
+            Mountain View Homestay Near Shimla
           </h1>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
             If you are searching for a peaceful mountain homestay near Shimla, Alpine Crest
-            Homestay is a peaceful mountain retreat in Village Kathot near Theog,
-            roughly an hour's drive from Shimla. It is a quiet base for travellers
-            exploring Shimla and the surrounding hills — you get the peace of the
-            pine valleys with easy road access to Shimla, Kufri and other nearby
-            destinations.
+            Homestay is located in Kathot near Theog and offers a peaceful alternative for travellers exploring Shimla.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <WhatsAppLink message={WA.location}>Check Availability on WhatsApp</WhatsAppLink>
@@ -184,7 +180,7 @@ function HomestayAtShimlaPage() {
             {[
               { name: "Shimla", to: "/places-to-visit/shimla" },
               { name: "Kufri", to: "/homestay-near-kufri" },
-              { name: "Theog", to: "/homestay-near-theog" },
+              { name: "Theog", to: "/homestay-in-theog" },
               { name: "Fagu", to: "/homestay-in-kathot" },
               { name: "Narkanda", to: "/mountain-view-homestay-theog" },
               { name: "Chail", to: "/homestay-at-chail" },

@@ -182,7 +182,7 @@ function HomestayInChailPage() {
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
               { name: "Kufri", to: "/homestay-near-kufri" },
-              { name: "Theog", to: "/homestay-near-theog" },
+              { name: "Theog", to: "/homestay-in-theog" },
               { name: "Chail", to: "/homestay-near-chail" },
               { name: "Shimla", to: "/homestay-near-shimla" },
             ].map((d) => (

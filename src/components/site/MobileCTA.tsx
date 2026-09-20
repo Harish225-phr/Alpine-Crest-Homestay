@@ -1,4 +1,4 @@
-import { Phone, Home } from "lucide-react";
+import { Phone, Home, MapPin } from "lucide-react";
 import { SITE, WA, waLink } from "@/lib/site";
 
 function WhatsAppIcon({ className }: { className?: string }) {
@@ -26,7 +26,7 @@ export function MobileCTA() {
     {
       href: SITE.mapsDirections,
       label: "Directions",
-      icon: null as never,
+      icon: MapPin,
       external: true,
     },
     {
@@ -49,9 +49,7 @@ export function MobileCTA() {
               className="flex flex-col items-center gap-1 px-1 py-2.5 text-[0.68rem] font-semibold text-foreground hover:bg-secondary/50 transition-colors"
             >
               {label === "Directions" ? (
-                <svg className="h-4.5 w-4.5 text-moss" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <polygon points="3 11 22 2 13 21 11 13 3 11" />
-                </svg>
+                <Icon className="h-4.5 w-4.5 text-moss" />
               ) : label === "Book" ? (
                 <Icon className="h-4.5 w-4.5 text-primary" />
               ) : (

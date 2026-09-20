@@ -27,6 +27,7 @@ import { SectionHeading } from "@/components/site/SectionHeading";
 import { StaySection } from "@/components/site/StaySection";
 import { FAQSection } from "@/components/site/FAQSection";
 import { MapEmbed } from "@/components/site/MapEmbed";
+import { ReviewsSection } from "@/components/site/ReviewsSection";
 import {
   exterior,
   deluxeRoom,
@@ -333,13 +334,14 @@ function HomePage() {
         </Reveal>
       </ParallaxBanner>
 
-      {/* Rooms */}
+      {/* Choose Your Stay / Rooms */}
       <section className="bg-secondary/60 py-20">
         <div className="container-page">
           <Reveal>
             <SectionHeading
-              eyebrow="Rooms"
-              title="Two room types, both with mountain air and honest comfort"
+              eyebrow="Choose Your Stay"
+              title="Find Your Perfect Stay in Theog"
+              intro="Two room types, both with mountain air and honest comfort"
             />
           </Reveal>
           <StaggerGroup className="mt-10 grid gap-8 md:grid-cols-2" stagger={0.1}>
@@ -440,6 +442,25 @@ function HomePage() {
             />
           </div>
         </Reveal>
+      </section>
+
+      {/* Best Homestay in Theog SEO Section */}
+      <section className="py-20 border-y border-border bg-card">
+        <div className="container-page max-w-4xl mx-auto text-center">
+          <Reveal>
+            <h2 className="font-display text-3xl text-pine sm:text-4xl">Looking for the Best Homestay in Theog?</h2>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground text-left sm:text-center">
+              Choosing the right homestay in Theog is about more than just a room. Travellers often look for peaceful surroundings, comfortable rooms, mountain views, convenient access to nearby attractions, local hospitality and an easy booking experience. Alpine Crest Homestay brings these elements together in a peaceful location in Kathot near Theog.
+            </p>
+            <ul className="mt-8 flex flex-wrap justify-center gap-4 text-sm font-medium text-moss">
+              <li className="flex items-center gap-1.5 bg-secondary/80 px-4 py-2 rounded-full"><Check className="h-4 w-4" /> Mountain surroundings</li>
+              <li className="flex items-center gap-1.5 bg-secondary/80 px-4 py-2 rounded-full"><Check className="h-4 w-4" /> Comfortable accommodation</li>
+              <li className="flex items-center gap-1.5 bg-secondary/80 px-4 py-2 rounded-full"><Check className="h-4 w-4" /> Local hospitality</li>
+              <li className="flex items-center gap-1.5 bg-secondary/80 px-4 py-2 rounded-full"><Check className="h-4 w-4" /> Nearby attractions</li>
+              <li className="flex items-center gap-1.5 bg-secondary/80 px-4 py-2 rounded-full"><Check className="h-4 w-4" /> Direct WhatsApp booking</li>
+            </ul>
+          </Reveal>
+        </div>
       </section>
 
       {/* Food banner */}
@@ -565,6 +586,9 @@ function HomePage() {
           ))}
         </StaggerGroup>
       </section>
+
+      {/* Real Guest Reviews */}
+      <ReviewsSection />
 
       {/* Location + Map */}
       <section className="bg-secondary/60 py-20">
