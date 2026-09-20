@@ -8,7 +8,7 @@ import { galleryImages } from "@/lib/content";
 export const Route = createFileRoute("/gallery")({
   head: () =>
     pageMeta({
-      title: "Gallery | Alpine Crest Homestay, Theog",
+      title: "Gallery | Alpine Crest Homestay Theog",
       description:
         "Photos of Alpine Crest Homestay near Theog — rooms, balconies, mountain views, the lounge and home-cooked Himachali food.",
       path: "/gallery",

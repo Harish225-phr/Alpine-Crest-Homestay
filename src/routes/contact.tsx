@@ -8,7 +8,7 @@ import { MapEmbed } from "@/components/site/MapEmbed";
 export const Route = createFileRoute("/contact")({
   head: () =>
     pageMeta({
-      title: "Contact | Alpine Crest Homestay, Theog",
+      title: "Contact Alpine Crest Homestay | Theog",
       description:
         "Contact Alpine Crest Homestay in Village Kathot near Theog, Himachal Pradesh. Send a WhatsApp message to check availability or ask about your stay.",
       path: "/contact",

@@ -9,7 +9,7 @@ import { destinations } from "@/lib/content";
 export const Route = createFileRoute("/location")({
   head: () =>
     pageMeta({
-      title: "Location & How to Reach | Alpine Crest Homestay, Theog",
+      title: "Location & Directions | Alpine Crest Homestay Theog",
       description:
         "Alpine Crest Homestay is in Village Kathot near Theog, Himachal Pradesh. Find the address, a Google Map and directions on how to reach the property.",
       path: "/location",

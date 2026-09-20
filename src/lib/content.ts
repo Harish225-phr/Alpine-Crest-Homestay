@@ -1,15 +1,11 @@
 import {
-  exterior,
-  deluxeRoom,
-  deluxeBalcony,
-  standardRoom,
-  bathroom,
-  lounge,
-  dining,
-  entrance,
-  fitness,
-  food,
+  exterior, entrance, night, bonFair,
+  standardRoom, deluxeRoom, deluxeBalcony, rooms1, rooms2, rooms3, rooms3_2, rooms4, rooms5, bathroom, roomsBathroom,
+  lounge, looby, looby3, sittingArea, sittingArea2, dining, diningArea, fitness,
+  snowView, snowView2, sunset, sunset2, views, views2,
+  food, food2, foodWithMountain, rooms as roomsImage
 } from "@/lib/images";
+
 import { blogExtraArticles } from "@/lib/blog-extra";
 
 export type RoomInfo = {
@@ -301,66 +297,30 @@ export type GalleryImage = {
 };
 
 export const galleryImages: GalleryImage[] = [
-  {
-    src: exterior,
-    alt: "Alpine Crest Homestay exterior on a Himalayan slope near Theog",
-    category: "Property",
-  },
-  {
-    src: entrance,
-    alt: "Entrance and approach to Alpine Crest Homestay, Theog",
-    category: "Property",
-  },
-  {
-    src: lounge,
-    alt: "Wood-panelled common lounge and dining area at Alpine Crest Homestay",
-    category: "Property",
-  },
-  {
-    src: dining,
-    alt: "Dining space at Alpine Crest Homestay with mountain views",
-    category: "Property",
-  },
-  {
-    src: standardRoom,
-    alt: "Standard room with double bed at Alpine Crest Homestay, Theog",
-    category: "Rooms",
-  },
-  {
-    src: deluxeRoom,
-    alt: "Deluxe room with pine panelling at Alpine Crest Homestay",
-    category: "Rooms",
-  },
-  {
-    src: bathroom,
-    alt: "Clean attached bathroom at Alpine Crest Homestay",
-    category: "Rooms",
-  },
-  {
-    src: deluxeBalcony,
-    alt: "Deluxe room balcony door opening onto the valley at Alpine Crest Homestay",
-    category: "Balcony",
-  },
-  {
-    src: deluxeBalcony,
-    alt: "Mountain view from the private balcony at Alpine Crest Homestay",
-    category: "Views",
-  },
-  {
-    src: deluxeBalcony,
-    alt: "Deodar ridgeline seen from the balcony at Alpine Crest Homestay near Theog",
-    category: "Views",
-  },
-  {
-    src: exterior,
-    alt: "Pine valley surroundings near Theog, Himachal Pradesh",
-    category: "Nature",
-  },
-  {
-    src: food,
-    alt: "Home-cooked Himachali thali served at Alpine Crest Homestay",
-    category: "Food",
-  },
+  { src: exterior, alt: "Alpine Crest Homestay exterior on a Himalayan slope near Theog", category: "Property" },
+  { src: entrance, alt: "Entrance and approach to Alpine Crest Homestay, Theog", category: "Property" },
+  { src: night, alt: "Alpine Crest Homestay at night", category: "Property" },
+  { src: bonFair, alt: "Bonfire at Alpine Crest Homestay", category: "Property" },
+  { src: lounge, alt: "Wood-panelled common lounge and dining area at Alpine Crest Homestay", category: "Property" },
+  { src: looby, alt: "Lobby area at Alpine Crest Homestay", category: "Property" },
+  { src: looby3, alt: "Lobby area at Alpine Crest Homestay", category: "Property" },
+  { src: sittingArea, alt: "Sitting area at Alpine Crest Homestay", category: "Property" },
+  { src: sittingArea2, alt: "Sitting area at Alpine Crest Homestay", category: "Property" },
+  { src: diningArea, alt: "Dining area at Alpine Crest Homestay", category: "Property" },
+  { src: fitness, alt: "Fitness corner at Alpine Crest Homestay", category: "Property" },
+  { src: standardRoom, alt: "Standard room with double bed at Alpine Crest Homestay, Theog", category: "Rooms" },
+  { src: deluxeRoom, alt: "Deluxe room with pine panelling at Alpine Crest Homestay", category: "Rooms" },
+  { src: bathroom, alt: "Clean attached bathroom at Alpine Crest Homestay", category: "Rooms" },
+  { src: deluxeBalcony, alt: "Deluxe room balcony door opening onto the valley at Alpine Crest Homestay", category: "Balcony" },
+  { src: snowView, alt: "Snow view from Alpine Crest Homestay", category: "Views" },
+  { src: snowView2, alt: "Snow covered mountains view from Alpine Crest Homestay", category: "Views" },
+  { src: sunset, alt: "Sunset view from Alpine Crest Homestay", category: "Views" },
+  { src: sunset2, alt: "Sunset view from Alpine Crest Homestay", category: "Views" },
+  { src: views, alt: "Mountain view from Alpine Crest Homestay", category: "Views" },
+  { src: views2, alt: "Scenic mountain view from Alpine Crest Homestay", category: "Views" },
+  { src: food, alt: "Home-cooked Himachali thali served at Alpine Crest Homestay", category: "Food" },
+  { src: food2, alt: "Delicious local food served at Alpine Crest Homestay", category: "Food" },
+  { src: foodWithMountain, alt: "Enjoying food with a mountain view at Alpine Crest Homestay", category: "Food" },
 ];
 
 export type Amenity = {

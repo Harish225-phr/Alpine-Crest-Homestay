@@ -34,12 +34,15 @@ import {
   lounge,
   food,
   deluxeBalcony,
+  snowView2,
+  foodWithMountain,
+  sunset,
 } from "@/lib/images";
 
 export const Route = createFileRoute("/")({
   head: () =>
     pageMeta({
-      title: "Alpine Crest Homestay | Homestay Near Shimla, Theog & Kufri",
+      title: "Alpine Crest Homestay | Mountain View Homestay in Theog",
       description:
         "Alpine Crest Homestay is a peaceful mountain retreat in Kathot near Theog, Himachal Pradesh. Panoramic mountain views, private balconies, home-cooked food and easy access to Theog, Kufri and Shimla.",
       path: "/",
@@ -621,12 +624,10 @@ function HomePage() {
           <SectionHeading
             eyebrow="Gallery"
             title="Glimpses of Alpine Crest"
-            intro="Take a look at the rooms, the views, and the food you can expect during your stay."
-            align="center"
           />
         </Reveal>
         <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4">
-          {[exterior, deluxeBalcony, lounge, food].map((img, i) => (
+          {[snowView2, deluxeBalcony, foodWithMountain, sunset].map((img, i) => (
             <Reveal key={i} delay={i * 0.1}>
               <div className="relative aspect-square overflow-hidden rounded-xl shadow-soft">
                 <img

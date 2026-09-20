@@ -8,7 +8,7 @@ import { amenitiesList } from "@/lib/content";
 export const Route = createFileRoute("/amenities")({
   head: () =>
     pageMeta({
-      title: "Amenities & Experience | Alpine Crest Homestay, Theog",
+      title: "Amenities | Alpine Crest Homestay Theog",
       description:
         "Free Wi-Fi, private parking, power backup, hot water, mountain views, home-cooked Himachali food and more at Alpine Crest Homestay near Theog, Himachal Pradesh.",
       path: "/amenities",

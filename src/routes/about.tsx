@@ -8,7 +8,7 @@ import { exterior, lounge, food } from "@/lib/images";
 export const Route = createFileRoute("/about")({
   head: () =>
     pageMeta({
-      title: "About | Alpine Crest Homestay, Theog",
+      title: "About Alpine Crest Homestay | Theog, Himachal Pradesh",
       description:
         "Alpine Crest Homestay is a family-run mountain homestay in Village Kathot near Theog, Himachal Pradesh. Learn about the host, the house and the hospitality.",
       path: "/about",

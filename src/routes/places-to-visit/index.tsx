@@ -7,7 +7,7 @@ import { destinations } from "@/lib/content";
 export const Route = createFileRoute("/places-to-visit/")({
   head: () => ({
     meta: [
-      { title: "Places to Visit Near Theog & Kufri | Alpine Crest Homestay" },
+      { title: "Places to Visit Near Theog | Alpine Crest Homestay" },
       {
         name: "description",
         content:
