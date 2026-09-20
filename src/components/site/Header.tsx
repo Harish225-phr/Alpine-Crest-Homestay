@@ -50,8 +50,8 @@ export function Header() {
 
       <div className="container-page grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 py-3">
         <Link to="/" className="flex min-w-0 items-center gap-2.5">
-          <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-primary text-primary-foreground">
-            <Mountain className="h-5 w-5" aria-hidden="true" />
+          <span className="grid h-10 w-10 shrink-0 place-items-center overflow-hidden rounded-full">
+            <img src="/favicon.png" alt="Alpine Crest Homestay" className="h-full w-full object-cover" />
           </span>
           <span className="min-w-0">
             <span className="block truncate font-display text-xl leading-tight font-semibold text-primary">
