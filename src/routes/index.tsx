@@ -229,8 +229,8 @@ function HomePage() {
         <Reveal>
           <div className="overflow-hidden rounded-2xl shadow-soft">
             <img
-              src={lounge}
-              alt="Wood-panelled common lounge and dining area at Alpine Crest Homestay"
+              src={snowView2}
+              alt="Snow view from Alpine Crest Homestay"
               width={765}
               height={1020}
               loading="lazy"
