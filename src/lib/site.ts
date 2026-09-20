@@ -43,6 +43,7 @@ export function pageMeta(opts: {
   type?: string;
 }) {
   const { title, description, path, type = "website" } = opts;
+  const canonicalUrl = path.startsWith("http") ? path : `https://alpinecresthomestay.com${path === "/" ? "" : path}`;
   return {
     meta: [
       { title },
@@ -56,7 +57,7 @@ export function pageMeta(opts: {
       { name: "twitter:title", content: title },
       { name: "twitter:description", content: description },
     ],
-    links: [{ rel: "canonical", href: path }],
+    links: [{ rel: "canonical", href: canonicalUrl }],
   };
 }
 

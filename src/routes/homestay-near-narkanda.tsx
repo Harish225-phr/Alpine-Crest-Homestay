@@ -24,9 +24,9 @@ export const Route = createFileRoute("/homestay-near-narkanda")({
           "Peaceful homestay base for exploring Narkanda. Mountain views, private balconies, home-cooked food.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/homestay-near-narkanda" },
+      { property: "og:url", content: "https://alpinecresthomestay.com/homestay-near-narkanda" },
     ],
-    links: [{ rel: "canonical", href: "/homestay-near-narkanda" }],
+    links: [{ rel: "canonical", href: "https://alpinecresthomestay.com/homestay-near-narkanda" }],
     scripts: [
       breadcrumbSchema([
         { name: "Home", path: "/" },

@@ -24,9 +24,9 @@ export const Route = createFileRoute("/mountain-view-homestay-theog")({
           "Peaceful homestay near Narkanda. Mountain views, private balconies, home-cooked food, easy access to Hatu Peak.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/mountain-view-homestay-theog" },
+      { property: "og:url", content: "https://alpinecresthomestay.com/mountain-view-homestay-theog" },
     ],
-    links: [{ rel: "canonical", href: "/mountain-view-homestay-theog" }],
+    links: [{ rel: "canonical", href: "https://alpinecresthomestay.com/mountain-view-homestay-theog" }],
     scripts: [
       breadcrumbSchema([
         { name: "Home", path: "/" },

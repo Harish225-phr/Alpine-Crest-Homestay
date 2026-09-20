@@ -6,52 +6,60 @@ import { exterior, deluxeBalcony, standardRoom, deluxeRoom, lounge, rooms1, room
 
 const stayCards = [
   {
+    to: "/homestay-in-kathot",
+    image: lounge,
+    heading: "Homestay in Kathot",
+    description:
+      "A peaceful village homestay located right in Kathot. Wake up to mountain views and experience warm, home-cooked Himachali hospitality.",
+    location: "Village Kathot · Theog",
+  },
+  {
     to: "/homestay-near-theog",
     image: rooms1,
-    heading: "Homestay at Theog",
+    heading: "Homestay in Theog",
     description:
-      "A family-run homestay in Kathot near Theog — comfortable rooms, private balconies and warm local hospitality in the upper Shimla hills.",
-    location: "Kathot · Theog · 6 km",
+      "A family-run homestay just a short drive from Theog — comfortable rooms, private balconies and warm local hospitality in the upper Shimla hills.",
+    location: "A short drive to Theog",
   },
   {
     to: "/homestay-near-kufri",
     image: deluxeBalcony,
-    heading: "Homestay at Kufri",
+    heading: "Homestay Near Kufri",
     description:
-      "A peaceful alternative to staying in crowded Kufri. Mountain views, private balconies and easy access to Kufri's sights — a short drive away.",
-    location: "Near Theog · 22 km to Kufri",
+      "A peaceful alternative to staying in crowded Kufri. Mountain views, private balconies and easy access to Kufri's sights.",
+    location: "Approx 22 km to Kufri",
   },
   {
     to: "/homestay-near-shimla",
     image: deluxeRoom,
-    heading: "Homestay at Shimla",
+    heading: "Homestay Near Shimla",
     description:
-      "A quiet mountain base about an hour from Shimla. Panoramic valley views, home-cooked food and easy day trips to Shimla and Kufri.",
-    location: "Kathot · 38 km to Shimla",
-  },
-  {
-    to: "/homestay-near-narkanda",
-    image: standardRoom,
-    heading: "Homestay at Narkanda",
-    description:
-      "A peaceful base with easy access to Narkanda, Hatu Peak and the apple belt of Kotgarh — mountain views and home-cooked food.",
-    location: "Near Theog · 60 km to Narkanda",
+      "A quiet mountain base for exploring Shimla. Panoramic valley views, home-cooked food and easy day trips into town.",
+    location: "Approx 38 km to Shimla",
   },
   {
     to: "/homestay-near-fagu",
     image: rooms3,
-    heading: "Homestay at Fagu",
+    heading: "Explore Fagu",
     description:
-      "A short drive from Fagu's quiet viewpoints and apple orchards — mountain-view rooms and private balconies in a peaceful setting.",
-    location: "Near Theog · 30 km to Fagu",
+      "A short scenic drive to Fagu's quiet viewpoints and apple orchards — mountain-view rooms and private balconies in a peaceful setting.",
+    location: "Approx 16 km to Fagu",
+  },
+  {
+    to: "/homestay-near-narkanda",
+    image: standardRoom,
+    heading: "Explore Narkanda",
+    description:
+      "A peaceful base with access for day trips to Narkanda, Hatu Peak and the apple belt of Kotgarh — mountain views and home-cooked food.",
+    location: "Scenic drive to Narkanda",
   },
   {
     to: "/homestay-near-chail",
     image: rooms3_2,
-    heading: "Homestay at Chail",
+    heading: "Explore Chail",
     description:
-      "A comfortable base with road access to Chail's wildlife sanctuary, the heritage Chail Palace and Sadhupul — mountain views and balconies.",
-    location: "Near Theog · 45 km to Chail",
+      "A comfortable base with road access to Chail's wildlife sanctuary, the heritage Chail Palace and Sadhupul.",
+    location: "Approx 45 km to Chail",
   },
 ];
 
@@ -61,9 +69,9 @@ export function StaySection() {
       <div className="container-page">
         <Reveal>
           <SectionHeading
-            eyebrow="Stay at Alpine Crest"
+            eyebrow="Stay Near Theog & Explore the Upper Shimla Hills"
             title="Find your perfect mountain stay"
-            intro="Whether you're searching for a homestay at Theog, Kufri, Shimla or beyond, Alpine Crest offers the same peaceful mountain experience. Explore each option below."
+            intro="Alpine Crest Homestay is your basecamp in Village Kathot. Whether you're visiting Kufri, Shimla, or exploring Narkanda, return each evening to a peaceful mountain home."
           />
         </Reveal>
 

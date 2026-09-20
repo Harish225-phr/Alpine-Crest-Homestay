@@ -70,7 +70,7 @@ function LocationPage() {
               <li>
                 <strong className="text-foreground">By air:</strong> The nearest
                 airport is Jubbarhatti near Shimla. From there, the homestay is
-                roughly a 90-minute drive.
+                roughly a 2-hour drive.
               </li>
             </ul>
             <p className="mt-4 text-sm text-muted-foreground">

@@ -24,9 +24,9 @@ export const Route = createFileRoute("/homestay-near-chail")({
           "Peaceful homestay base for exploring Chail. Mountain views, private balconies, home-cooked food.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/homestay-near-chail" },
+      { property: "og:url", content: "https://alpinecresthomestay.com/homestay-near-chail" },
     ],
-    links: [{ rel: "canonical", href: "/homestay-near-chail" }],
+    links: [{ rel: "canonical", href: "https://alpinecresthomestay.com/homestay-near-chail" }],
     scripts: [
       breadcrumbSchema([
         { name: "Home", path: "/" },

@@ -24,9 +24,9 @@ export const Route = createFileRoute("/homestay-in-kathot")({
           "Peaceful homestay near Fagu. Mountain views, private balconies, home-cooked food, quiet surroundings.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/homestay-in-kathot" },
+      { property: "og:url", content: "https://alpinecresthomestay.com/homestay-in-kathot" },
     ],
-    links: [{ rel: "canonical", href: "/homestay-in-kathot" }],
+    links: [{ rel: "canonical", href: "https://alpinecresthomestay.com/homestay-in-kathot" }],
     scripts: [
       breadcrumbSchema([
         { name: "Home", path: "/" },

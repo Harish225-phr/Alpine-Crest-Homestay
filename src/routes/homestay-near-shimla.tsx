@@ -24,9 +24,9 @@ export const Route = createFileRoute("/homestay-near-shimla")({
           "Peaceful mountain homestay near Shimla. Mountain views, private balconies, easy access to Shimla and Kufri.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/homestay-near-shimla" },
+      { property: "og:url", content: "https://alpinecresthomestay.com/homestay-near-shimla" },
     ],
-    links: [{ rel: "canonical", href: "/homestay-near-shimla" }],
+    links: [{ rel: "canonical", href: "https://alpinecresthomestay.com/homestay-near-shimla" }],
     scripts: [
       breadcrumbSchema([
         { name: "Home", path: "/" },

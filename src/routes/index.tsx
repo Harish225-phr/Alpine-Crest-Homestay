@@ -46,7 +46,7 @@ export const Route = createFileRoute("/")({
     pageMeta({
       title: "Alpine Crest Homestay | Mountain View Homestay in Theog",
       description:
-        "Alpine Crest Homestay is a peaceful mountain retreat in Kathot near Theog, Himachal Pradesh. Panoramic mountain views, private balconies, home-cooked food and easy access to Theog, Kufri and Shimla.",
+        "Stay at Alpine Crest Homestay in Kathot, Theog, Himachal Pradesh. Enjoy peaceful mountain views, comfortable rooms and warm Himachali hospitality near Kufri and Shimla.",
       path: "/",
     }),
   component: HomePage,
@@ -60,7 +60,7 @@ const amenities = [
   { icon: Mountain, label: "Valley Views" },
   { icon: Trees, label: "Orchard & Garden" },
   { icon: Dumbbell, label: "Fitness Corner" },
-  { icon: ShowerHead, label: "Hot Water 24×7" },
+  { icon: ShowerHead, label: "Hot Water" },
 ];
 
 const rooms = [
@@ -145,7 +145,7 @@ function HomePage() {
                 transition={{ duration: 0.7, delay: 0.1 }}
                 className="mt-4 max-w-3xl font-display text-4xl leading-[1.08] text-sand sm:text-6xl"
               >
-                Alpine Crest Homestay – Peaceful Homestay Near Shimla, Theog &amp; Kufri
+                Mountain View Homestay in Theog, Himachal Pradesh
               </motion.h1>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -607,7 +607,7 @@ function HomePage() {
             { step: "01", title: "By road", desc: "Theog is on NH-5, roughly an hour's drive east of Shimla. From Theog, follow Majhar Road to Village Kathot." },
             { step: "02", title: "By bus", desc: "State buses run regularly between Shimla and Theog. A short taxi ride from Theog reaches the house." },
             { step: "03", title: "By train", desc: "The nearest railhead is Shimla (narrow-gauge toy train from Kalka). From Shimla, about an hour by road." },
-            { step: "04", title: "By air", desc: "The nearest airport is Jubbarhatti near Shimla. From there, roughly a 90-minute drive. We can arrange a pickup." },
+            { step: "04", title: "By air", desc: "The nearest airport is Jubbarhatti near Shimla. From there, it is roughly a 2-hour drive. We can arrange a pickup." },
           ].map(({ step, title, desc }) => (
             <StaggerItem key={step}>
               <div className="h-full rounded-2xl border border-border bg-card p-6 shadow-soft">

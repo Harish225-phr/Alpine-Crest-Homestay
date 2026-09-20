@@ -24,9 +24,9 @@ export const Route = createFileRoute("/homestay-near-fagu")({
           "Peaceful homestay base for exploring Fagu. Mountain views, private balconies, home-cooked food.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/homestay-near-fagu" },
+      { property: "og:url", content: "https://alpinecresthomestay.com/homestay-near-fagu" },
     ],
-    links: [{ rel: "canonical", href: "/homestay-near-fagu" }],
+    links: [{ rel: "canonical", href: "https://alpinecresthomestay.com/homestay-near-fagu" }],
     scripts: [
       breadcrumbSchema([
         { name: "Home", path: "/" },

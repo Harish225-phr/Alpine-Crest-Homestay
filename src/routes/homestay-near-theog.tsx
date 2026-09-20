@@ -25,9 +25,9 @@ export const Route = createFileRoute("/homestay-near-theog")({
           "Peaceful homestay in Kathot near Theog, Himachal Pradesh. Mountain views, private balconies, home-cooked food.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/homestay-near-theog" },
+      { property: "og:url", content: "https://alpinecresthomestay.com/homestay-near-theog" },
     ],
-    links: [{ rel: "canonical", href: "/homestay-near-theog" }],
+    links: [{ rel: "canonical", href: "https://alpinecresthomestay.com/homestay-near-theog" }],
     scripts: [
       breadcrumbSchema([
         { name: "Home", path: "/" },

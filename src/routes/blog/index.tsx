@@ -19,9 +19,9 @@ export const Route = createFileRoute("/blog/")({
         content: "Travel guides for Theog, Kufri, Shimla and the upper Shimla hills.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/blog" },
+      { property: "og:url", content: "https://alpinecresthomestay.com/blog" },
     ],
-    links: [{ rel: "canonical", href: "/blog" }],
+    links: [{ rel: "canonical", href: "https://alpinecresthomestay.com/blog" }],
     scripts: [
       breadcrumbSchema([
         { name: "Home", path: "/" },
