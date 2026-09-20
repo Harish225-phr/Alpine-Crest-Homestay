@@ -16,7 +16,7 @@ const columns: { title: string; links: { to: string; label: string }[] }[] = [
   {
     title: "Homestay In",
     links: [
-      { to: "/homestay-in-theog", label: "Homestay in Theog" },
+      { to: "/homestay-near-theog", label: "Homestay in Theog" },
       { to: "/homestay-near-kufri", label: "Homestay near Kufri" },
       { to: "/homestay-near-shimla", label: "Homestay near Shimla" },
       { to: "/homestay-in-kathot", label: "Homestay in Kathot" },

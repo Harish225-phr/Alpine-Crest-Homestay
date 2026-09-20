@@ -2,19 +2,19 @@ import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { Reveal, StaggerGroup, StaggerItem } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
-import { exterior, deluxeBalcony, standardRoom, deluxeRoom, lounge } from "@/lib/images";
+import { exterior, deluxeBalcony, standardRoom, deluxeRoom, lounge, rooms1, rooms2, rooms3, rooms3_2 } from "@/lib/images";
 
 const stayCards = [
   {
-    to: "/homestay-at-theog",
-    image: exterior,
+    to: "/homestay-near-theog",
+    image: rooms1,
     heading: "Homestay at Theog",
     description:
       "A family-run homestay in Kathot near Theog — comfortable rooms, private balconies and warm local hospitality in the upper Shimla hills.",
     location: "Kathot · Theog · 6 km",
   },
   {
-    to: "/homestay-at-kufri",
+    to: "/homestay-near-kufri",
     image: deluxeBalcony,
     heading: "Homestay at Kufri",
     description:
@@ -22,7 +22,7 @@ const stayCards = [
     location: "Near Theog · 22 km to Kufri",
   },
   {
-    to: "/homestay-at-shimla",
+    to: "/homestay-near-shimla",
     image: deluxeRoom,
     heading: "Homestay at Shimla",
     description:
@@ -30,7 +30,7 @@ const stayCards = [
     location: "Kathot · 38 km to Shimla",
   },
   {
-    to: "/homestay-at-narkanda",
+    to: "/homestay-near-narkanda",
     image: standardRoom,
     heading: "Homestay at Narkanda",
     description:
@@ -38,16 +38,16 @@ const stayCards = [
     location: "Near Theog · 60 km to Narkanda",
   },
   {
-    to: "/homestay-at-fagu",
-    image: deluxeBalcony,
+    to: "/homestay-near-fagu",
+    image: rooms3,
     heading: "Homestay at Fagu",
     description:
       "A short drive from Fagu's quiet viewpoints and apple orchards — mountain-view rooms and private balconies in a peaceful setting.",
     location: "Near Theog · 30 km to Fagu",
   },
   {
-    to: "/homestay-at-chail",
-    image: lounge,
+    to: "/homestay-near-chail",
+    image: rooms3_2,
     heading: "Homestay at Chail",
     description:
       "A comfortable base with road access to Chail's wildlife sanctuary, the heritage Chail Palace and Sadhupul — mountain views and balconies.",

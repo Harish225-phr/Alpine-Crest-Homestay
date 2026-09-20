@@ -33,10 +33,12 @@ import {
   standardRoom,
   lounge,
   food,
+  food3,
   deluxeBalcony,
   snowView2,
   foodWithMountain,
   sunset,
+  sunset3,
 } from "@/lib/images";
 
 export const Route = createFileRoute("/")({
@@ -442,7 +444,7 @@ function HomePage() {
 
       {/* Food banner */}
       <ParallaxBanner
-        image={food}
+        image={food3}
         imageAlt="Home-cooked Himachali thali served at Alpine Crest Homestay"
         overlay="bg-gradient-to-b from-pine/80 via-pine/50 to-pine/80"
       >
@@ -714,7 +716,7 @@ function HomePage() {
 
       {/* Final booking banner */}
       <ParallaxBanner
-        image={deluxeBalcony}
+        image={sunset3}
         imageAlt="Mountain view from Alpine Crest Homestay at sunset"
         overlay="bg-gradient-to-b from-pine/90 via-pine/65 to-pine/90"
         className="mb-20"

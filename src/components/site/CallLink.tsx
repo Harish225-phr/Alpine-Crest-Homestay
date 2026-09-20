@@ -10,7 +10,7 @@ const variants: Record<Variant, string> = {
   primary: "bg-clay text-accent-foreground hover:opacity-90 px-6 py-3",
   whatsapp: "bg-whatsapp text-whatsapp-foreground hover:opacity-90 px-6 py-3",
   outline:
-    "border border-border bg-card text-foreground hover:bg-secondary px-6 py-3",
+    "border border-border bg-transparent text-foreground hover:bg-secondary px-6 py-3",
 };
 
 export function CallLink({

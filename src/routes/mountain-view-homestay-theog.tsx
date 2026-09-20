@@ -183,7 +183,7 @@ function HomestayAtNarkandaPage() {
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
               { name: "Narkanda", to: "/places-to-visit/narkanda" },
-              { name: "Theog", to: "/homestay-in-theog" },
+              { name: "Theog", to: "/homestay-near-theog" },
               { name: "Fagu", to: "/homestay-in-kathot" },
               { name: "Shimla", to: "/homestay-near-shimla" },
             ].map((d) => (

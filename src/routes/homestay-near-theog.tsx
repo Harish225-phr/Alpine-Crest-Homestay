@@ -9,7 +9,7 @@ import { SectionHeading } from "@/components/site/SectionHeading";
 import { MapEmbed } from "@/components/site/MapEmbed";
 import { exterior, standardRoom, deluxeBalcony } from "@/lib/images";
 
-export const Route = createFileRoute("/homestay-in-theog")({
+export const Route = createFileRoute("/homestay-near-theog")({
   head: () => ({
     meta: [
       { title: "Homestay in Theog, Himachal Pradesh | Alpine Crest Homestay" },
@@ -25,13 +25,13 @@ export const Route = createFileRoute("/homestay-in-theog")({
           "Peaceful homestay in Kathot near Theog, Himachal Pradesh. Mountain views, private balconies, home-cooked food.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/homestay-in-theog" },
+      { property: "og:url", content: "/homestay-near-theog" },
     ],
-    links: [{ rel: "canonical", href: "/homestay-in-theog" }],
+    links: [{ rel: "canonical", href: "/homestay-near-theog" }],
     scripts: [
       breadcrumbSchema([
         { name: "Home", path: "/" },
-        { name: "Homestay in Theog", path: "/homestay-in-theog" },
+        { name: "Homestay in Theog", path: "/homestay-near-theog" },
       ]),
     ],
   }),

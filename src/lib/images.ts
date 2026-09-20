@@ -29,17 +29,19 @@ import snowView from "@/assets/alpine-crest-snow-view.png";
 import snowView2 from "@/assets/alpine-crest-snow-view2.png";
 import sunset from "@/assets/alpine-crest-sunset.png";
 import sunset2 from "@/assets/alpine-crest-sunset2.png";
+import sunset3 from "@/assets/alpine-crest-sunset3.png";
 import views from "@/assets/alpine-crest-views.png";
 import views2 from "@/assets/alpine-crest-views2.png";
 
 import food from "@/assets/alpine-crest-himachali-food.webp";
 import food2 from "@/assets/alpine-crest-food.png";
+import food3 from "@/assets/alpine-crest-food2.png";
 import foodWithMountain from "@/assets/alpine-crest-food-with-mountain.png";
 
 export {
   exterior, entrance, night, bonFair,
   standardRoom, deluxeRoom, deluxeBalcony, rooms1, rooms2, rooms3, rooms, rooms3_2, rooms4, rooms5, bathroom, roomsBathroom,
   lounge, looby, looby3, sittingArea, sittingArea2, dining, diningArea, fitness,
-  snowView, snowView2, sunset, sunset2, views, views2,
-  food, food2, foodWithMountain
+  snowView, snowView2, sunset, sunset2, sunset3, views, views2,
+  food, food2, food3, foodWithMountain
 };

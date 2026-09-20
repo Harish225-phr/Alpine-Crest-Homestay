@@ -184,7 +184,7 @@ function HomestayAtShimlaPage() {
             {[
               { name: "Shimla", to: "/places-to-visit/shimla" },
               { name: "Kufri", to: "/homestay-near-kufri" },
-              { name: "Theog", to: "/homestay-in-theog" },
+              { name: "Theog", to: "/homestay-near-theog" },
               { name: "Fagu", to: "/homestay-in-kathot" },
               { name: "Narkanda", to: "/mountain-view-homestay-theog" },
               { name: "Chail", to: "/homestay-at-chail" },
