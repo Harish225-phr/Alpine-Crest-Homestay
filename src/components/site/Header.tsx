@@ -6,11 +6,11 @@ import { WhatsAppLink } from "./WhatsAppLink";
 
 const nav = [
   { to: "/", label: "Home" },
+  { to: "/about", label: "About" },
   { to: "/rooms", label: "Rooms" },
   { to: "/amenities", label: "Experience" },
   { to: "/gallery", label: "Gallery" },
   { to: "/location", label: "Location" },
-  { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
 ] as const;
 
