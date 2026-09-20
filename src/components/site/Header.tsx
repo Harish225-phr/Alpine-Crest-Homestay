@@ -53,7 +53,7 @@ export function Header() {
           <span className="grid h-10 w-10 shrink-0 place-items-center overflow-hidden rounded-full">
             <img src="/favicon.png" alt="Alpine Crest Homestay" className="h-full w-full object-cover" />
           </span>
-          <span className="min-w-0">
+          <span className="min-w-0 hidden sm:block">
             <span className="block truncate font-display text-xl leading-tight font-semibold text-primary">
               Alpine Crest Homestay
             </span>

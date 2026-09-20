@@ -113,7 +113,7 @@ function HomePage() {
     <>
       {/* Hero */}
       <section className="relative">
-        <div ref={heroRef} className="relative h-[82vh] min-h-[560px] w-full overflow-hidden">
+        <div ref={heroRef} className="relative h-[100dvh] min-h-[750px] sm:h-[82vh] sm:min-h-[560px] w-full overflow-hidden">
           <motion.img
             src={exterior}
             alt="Alpine Crest Homestay exterior on a Himalayan slope near Theog, Himachal Pradesh"
@@ -431,7 +431,7 @@ function HomePage() {
         <Reveal className="order-1 lg:order-2">
           <div className="overflow-hidden rounded-2xl shadow-soft">
             <img
-              src={deluxeBalcony}
+              src={sunset3}
               alt="Private balcony opening onto the deodar valley at Alpine Crest Homestay"
               width={1360}
               height={1020}
