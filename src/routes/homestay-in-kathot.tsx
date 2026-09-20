@@ -8,29 +8,29 @@ import { Reveal } from "@/components/site/Reveal";
 import { SectionHeading } from "@/components/site/SectionHeading";
 import { exterior, deluxeBalcony, standardRoom } from "@/lib/images";
 
-export const Route = createFileRoute("/homestay-at-fagu")({
+export const Route = createFileRoute("/homestay-in-kathot")({
   head: () => ({
     meta: [
-      { title: "Best Homestay at Near Fagu | Alpine Crest Homestay" },
+      { title: "Homestay in Kathot Near Theog | Alpine Crest" },
       {
         name: "description",
         content:
-          "Looking for the best homestay at near Fagu? Alpine Crest Homestay in Kathot near Theog is a short drive from Fagu, offering mountain-view rooms, private balconies, home-cooked food and peaceful surroundings.",
+          "Looking for a homestay in Kathot near Theog? Alpine Crest Homestay in Kathot near Theog is a short drive from Fagu, offering mountain-view rooms, private balconies, home-cooked food and peaceful surroundings.",
       },
-      { property: "og:title", content: "Best Homestay at Near Fagu | Alpine Crest Homestay" },
+      { property: "og:title", content: "Homestay in Kathot Near Theog | Alpine Crest" },
       {
         property: "og:description",
         content:
           "Peaceful homestay near Fagu. Mountain views, private balconies, home-cooked food, quiet surroundings.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/homestay-at-fagu" },
+      { property: "og:url", content: "/homestay-in-kathot" },
     ],
-    links: [{ rel: "canonical", href: "/homestay-at-fagu" }],
+    links: [{ rel: "canonical", href: "/homestay-in-kathot" }],
     scripts: [
       breadcrumbSchema([
         { name: "Home", path: "/" },
-        { name: "Homestay at Fagu", path: "/homestay-at-fagu" },
+        { name: "Homestay in Kathot", path: "/homestay-in-kathot" },
       ]),
     ],
   }),
@@ -40,16 +40,16 @@ export const Route = createFileRoute("/homestay-at-fagu")({
 function HomestayAtFaguPage() {
   return (
     <>
-      <Breadcrumbs items={[{ name: "Homestay at Fagu" }]} />
+      <Breadcrumbs items={[{ name: "Homestay in Kathot" }]} />
 
       <section className="container-page grid items-center gap-10 py-12 lg:grid-cols-2">
         <div>
-          <p className="eyebrow">Homestay at Fagu</p>
+          <p className="eyebrow">Homestay in Kathot</p>
           <h1 className="mt-3 text-4xl leading-[1.1] sm:text-5xl">
-            Best Homestay at Near Fagu, Himachal Pradesh
+            Homestay in Kathot, Near Theog
           </h1>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
-            If you are searching for the best homestay at near Fagu, Alpine Crest
+            If you are searching for a homestay in Kathot near Theog, Alpine Crest
             Homestay is a peaceful mountain retreat in Village Kathot near Theog,
             a short drive from Fagu on NH-5. Fagu is known for its quiet
             viewpoints, apple orchards and pine-covered ridges — and our homestay
@@ -190,9 +190,9 @@ function HomestayAtFaguPage() {
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
               { name: "Fagu", to: "/places-to-visit/fagu" },
-              { name: "Theog", to: "/homestay-at-theog" },
-              { name: "Kufri", to: "/homestay-at-kufri" },
-              { name: "Narkanda", to: "/homestay-at-narkanda" },
+              { name: "Theog", to: "/homestay-in-theog" },
+              { name: "Kufri", to: "/homestay-near-kufri" },
+              { name: "Narkanda", to: "/mountain-view-homestay-theog" },
             ].map((d) => (
               <Link
                 key={d.name}

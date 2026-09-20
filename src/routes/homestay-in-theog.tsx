@@ -9,29 +9,29 @@ import { SectionHeading } from "@/components/site/SectionHeading";
 import { MapEmbed } from "@/components/site/MapEmbed";
 import { exterior, standardRoom, deluxeBalcony } from "@/lib/images";
 
-export const Route = createFileRoute("/homestay-at-theog")({
+export const Route = createFileRoute("/homestay-in-theog")({
   head: () => ({
     meta: [
-      { title: "Best Homestay at Near Theog | Alpine Crest Homestay" },
+      { title: "Homestay in Theog, Himachal Pradesh | Alpine Crest Homestay" },
       {
         name: "description",
         content:
-          "Looking for the best homestay at near Theog? Alpine Crest Homestay in Kathot near Theog offers mountain-view rooms, private balconies, home-cooked Himachali food and warm family hospitality.",
+          "Looking for a homestay in Theog? Alpine Crest Homestay in Kathot near Theog offers mountain-view rooms, private balconies, home-cooked Himachali food and warm family hospitality.",
       },
-      { property: "og:title", content: "Best Homestay at Near Theog | Alpine Crest Homestay" },
+      { property: "og:title", content: "Homestay in Theog, Himachal Pradesh | Alpine Crest Homestay" },
       {
         property: "og:description",
         content:
           "Peaceful homestay in Kathot near Theog, Himachal Pradesh. Mountain views, private balconies, home-cooked food.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/homestay-at-theog" },
+      { property: "og:url", content: "/homestay-in-theog" },
     ],
-    links: [{ rel: "canonical", href: "/homestay-at-theog" }],
+    links: [{ rel: "canonical", href: "/homestay-in-theog" }],
     scripts: [
       breadcrumbSchema([
         { name: "Home", path: "/" },
-        { name: "Homestay at Theog", path: "/homestay-at-theog" },
+        { name: "Homestay in Theog", path: "/homestay-in-theog" },
       ]),
     ],
   }),
@@ -41,16 +41,16 @@ export const Route = createFileRoute("/homestay-at-theog")({
 function HomestayAtTheogPage() {
   return (
     <>
-      <Breadcrumbs items={[{ name: "Homestay at Theog" }]} />
+      <Breadcrumbs items={[{ name: "Homestay in Theog" }]} />
 
       <section className="container-page grid items-center gap-10 py-12 lg:grid-cols-2">
         <div>
-          <p className="eyebrow">Homestay at Theog</p>
+          <p className="eyebrow">Homestay in Theog</p>
           <h1 className="mt-3 text-4xl leading-[1.1] sm:text-5xl">
-            Best Homestay at Near Theog, Himachal Pradesh
+            Homestay in Theog with Mountain Views
           </h1>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
-            If you are searching for the best homestay at near Theog, Alpine Crest
+            If you are searching for a peaceful homestay in Theog, Alpine Crest
             Homestay is a family-run mountain retreat in Village Kathot, just off
             Majhar Road near Theog. With panoramic valley views, private balconies,
             home-cooked Himachali meals and warm local hospitality, it is a
@@ -145,13 +145,13 @@ function HomestayAtTheogPage() {
             <h2>Places to Visit Near Theog</h2>
             <p>
               Theog is well placed as a base for the upper Shimla hills.{" "}
-              <Link to="/homestay-at-kufri" className="text-moss underline underline-offset-4">Kufri</Link>{" "}
+              <Link to="/homestay-near-kufri" className="text-moss underline underline-offset-4">Kufri</Link>{" "}
               is about 30 minutes away for the Himalayan Nature Park and winter snow;
               Fagu is a short drive for quiet viewpoints;{" "}
-              <Link to="/homestay-at-narkanda" className="text-moss underline underline-offset-4">Narkanda</Link>,
+              <Link to="/mountain-view-homestay-theog" className="text-moss underline underline-offset-4">Narkanda</Link>,
               further along NH-5, offers Hatu Peak and the apple belt of Kotgarh;
               and{" "}
-              <Link to="/homestay-at-shimla" className="text-moss underline underline-offset-4">Shimla</Link>{" "}
+              <Link to="/homestay-near-shimla" className="text-moss underline underline-offset-4">Shimla</Link>{" "}
               town is an hour west if you want a day trip to the Ridge and Mall Road.
             </p>
           </div>

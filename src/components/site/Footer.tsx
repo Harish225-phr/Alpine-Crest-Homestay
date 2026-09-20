@@ -9,19 +9,18 @@ const columns: { title: string; links: { to: string; label: string }[] }[] = [
     links: [
       { to: "/", label: "Home" },
       { to: "/rooms", label: "Rooms" },
-      { to: "/amenities", label: "Amenities" },
+      { to: "/amenities", label: "Experience" },
       { to: "/gallery", label: "Gallery" },
     ],
   },
   {
-    title: "Homestay At",
+    title: "Homestay In",
     links: [
-      { to: "/homestay-at-theog", label: "Homestay at Theog" },
-      { to: "/homestay-at-kufri", label: "Homestay at Kufri" },
-      { to: "/homestay-at-shimla", label: "Homestay at Shimla" },
-      { to: "/homestay-at-narkanda", label: "Homestay at Narkanda" },
-      { to: "/homestay-at-fagu", label: "Homestay at Fagu" },
-      { to: "/homestay-at-chail", label: "Homestay at Chail" },
+      { to: "/homestay-in-theog", label: "Homestay in Theog" },
+      { to: "/homestay-near-kufri", label: "Homestay near Kufri" },
+      { to: "/homestay-near-shimla", label: "Homestay near Shimla" },
+      { to: "/homestay-in-kathot", label: "Homestay in Kathot" },
+      { to: "/mountain-view-homestay-theog", label: "Mountain View Stay" },
     ],
   },
   {

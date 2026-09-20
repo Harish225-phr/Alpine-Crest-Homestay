@@ -8,29 +8,29 @@ import { Reveal } from "@/components/site/Reveal";
 import { SectionHeading } from "@/components/site/SectionHeading";
 import { deluxeRoom, deluxeBalcony, standardRoom } from "@/lib/images";
 
-export const Route = createFileRoute("/homestay-at-kufri")({
+export const Route = createFileRoute("/homestay-near-kufri")({
   head: () => ({
     meta: [
-      { title: "Best Homestay at Near Kufri | Alpine Crest Homestay" },
+      { title: "Peaceful Homestay Near Kufri | Alpine Crest Homestay" },
       {
         name: "description",
         content:
-          "Looking for the best homestay at near Kufri? Alpine Crest Homestay is a short drive from Kufri in Kathot near Theog, offering mountain-view rooms, private balconies and home-cooked food — a peaceful alternative to staying in Kufri.",
+          "Looking for a peaceful homestay near Kufri? Alpine Crest Homestay is a short drive from Kufri in Kathot near Theog, offering mountain-view rooms, private balconies and home-cooked food — a peaceful alternative to staying in Kufri.",
       },
-      { property: "og:title", content: "Best Homestay at Near Kufri | Alpine Crest Homestay" },
+      { property: "og:title", content: "Peaceful Homestay Near Kufri | Alpine Crest Homestay" },
       {
         property: "og:description",
         content:
           "Peaceful homestay a short drive from Kufri. Mountain views, private balconies, home-cooked food.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/homestay-at-kufri" },
+      { property: "og:url", content: "/homestay-near-kufri" },
     ],
-    links: [{ rel: "canonical", href: "/homestay-at-kufri" }],
+    links: [{ rel: "canonical", href: "/homestay-near-kufri" }],
     scripts: [
       breadcrumbSchema([
         { name: "Home", path: "/" },
-        { name: "Homestay at Kufri", path: "/homestay-at-kufri" },
+        { name: "Homestay Near Kufri", path: "/homestay-near-kufri" },
       ]),
     ],
   }),
@@ -40,16 +40,16 @@ export const Route = createFileRoute("/homestay-at-kufri")({
 function HomestayAtKufriPage() {
   return (
     <>
-      <Breadcrumbs items={[{ name: "Homestay at Kufri" }]} />
+      <Breadcrumbs items={[{ name: "Homestay Near Kufri" }]} />
 
       <section className="container-page grid items-center gap-10 py-12 lg:grid-cols-2">
         <div>
-          <p className="eyebrow">Homestay at Kufri</p>
+          <p className="eyebrow">Homestay Near Kufri</p>
           <h1 className="mt-3 text-4xl leading-[1.1] sm:text-5xl">
-            Best Homestay at Near Kufri, Shimla
+            Peaceful Homestay Near Kufri
           </h1>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
-            If you are looking for the best homestay at near Kufri, Alpine Crest
+            If you are looking for a peaceful homestay near Kufri, Alpine Crest
             Homestay offers a peaceful mountain stay in Village Kathot near Theog,
             with convenient access toward Kufri. It is a quiet alternative to
             staying in Kufri itself, which gets crowded in peak season and on
@@ -190,9 +190,9 @@ function HomestayAtKufriPage() {
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
               { name: "Kufri", to: "/places-to-visit/kufri" },
-              { name: "Theog", to: "/homestay-at-theog" },
-              { name: "Fagu", to: "/homestay-at-fagu" },
-              { name: "Shimla", to: "/homestay-at-shimla" },
+              { name: "Theog", to: "/homestay-in-theog" },
+              { name: "Fagu", to: "/homestay-in-kathot" },
+              { name: "Shimla", to: "/homestay-near-shimla" },
             ].map((d) => (
               <Link
                 key={d.name}

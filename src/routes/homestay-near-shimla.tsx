@@ -8,29 +8,29 @@ import { Reveal } from "@/components/site/Reveal";
 import { SectionHeading } from "@/components/site/SectionHeading";
 import { exterior, deluxeBalcony, standardRoom } from "@/lib/images";
 
-export const Route = createFileRoute("/homestay-at-shimla")({
+export const Route = createFileRoute("/homestay-near-shimla")({
   head: () => ({
     meta: [
-      { title: "Best Homestay at Near Shimla | Alpine Crest Homestay" },
+      { title: "Mountain Homestay Near Shimla | Alpine Crest" },
       {
         name: "description",
         content:
-          "Looking for the best homestay at near Shimla? Alpine Crest Homestay is a peaceful mountain retreat in Kathot near Theog, about an hour from Shimla. Mountain views, private balconies, home-cooked food and easy access to Shimla.",
+          "Looking for a mountain homestay near Shimla? Alpine Crest Homestay is a peaceful mountain retreat in Kathot near Theog, about an hour from Shimla. Mountain views, private balconies, home-cooked food and easy access to Shimla.",
       },
-      { property: "og:title", content: "Best Homestay at Near Shimla | Alpine Crest Homestay" },
+      { property: "og:title", content: "Mountain Homestay Near Shimla | Alpine Crest" },
       {
         property: "og:description",
         content:
           "Peaceful mountain homestay near Shimla. Mountain views, private balconies, easy access to Shimla and Kufri.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/homestay-at-shimla" },
+      { property: "og:url", content: "/homestay-near-shimla" },
     ],
-    links: [{ rel: "canonical", href: "/homestay-at-shimla" }],
+    links: [{ rel: "canonical", href: "/homestay-near-shimla" }],
     scripts: [
       breadcrumbSchema([
         { name: "Home", path: "/" },
-        { name: "Homestay at Shimla", path: "/homestay-at-shimla" },
+        { name: "Homestay Near Shimla", path: "/homestay-near-shimla" },
       ]),
     ],
   }),
@@ -40,16 +40,16 @@ export const Route = createFileRoute("/homestay-at-shimla")({
 function HomestayAtShimlaPage() {
   return (
     <>
-      <Breadcrumbs items={[{ name: "Homestay at Shimla" }]} />
+      <Breadcrumbs items={[{ name: "Homestay Near Shimla" }]} />
 
       <section className="container-page grid items-center gap-10 py-12 lg:grid-cols-2">
         <div>
-          <p className="eyebrow">Homestay at Shimla</p>
+          <p className="eyebrow">Homestay Near Shimla</p>
           <h1 className="mt-3 text-4xl leading-[1.1] sm:text-5xl">
-            Best Homestay at Near Shimla, Himachal Pradesh
+            Peaceful Mountain Homestay Near Shimla
           </h1>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
-            If you are searching for the best homestay at near Shimla, Alpine Crest
+            If you are searching for a peaceful mountain homestay near Shimla, Alpine Crest
             Homestay is a peaceful mountain retreat in Village Kathot near Theog,
             roughly an hour's drive from Shimla. It is a quiet base for travellers
             exploring Shimla and the surrounding hills — you get the peace of the
@@ -183,10 +183,10 @@ function HomestayAtShimlaPage() {
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {[
               { name: "Shimla", to: "/places-to-visit/shimla" },
-              { name: "Kufri", to: "/homestay-at-kufri" },
-              { name: "Theog", to: "/homestay-at-theog" },
-              { name: "Fagu", to: "/homestay-at-fagu" },
-              { name: "Narkanda", to: "/homestay-at-narkanda" },
+              { name: "Kufri", to: "/homestay-near-kufri" },
+              { name: "Theog", to: "/homestay-in-theog" },
+              { name: "Fagu", to: "/homestay-in-kathot" },
+              { name: "Narkanda", to: "/mountain-view-homestay-theog" },
               { name: "Chail", to: "/homestay-at-chail" },
             ].map((d) => (
               <Link

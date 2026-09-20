@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { pageMeta } from "@/lib/site";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { galleryImages } from "@/lib/content";
@@ -21,6 +22,24 @@ function GalleryPage() {
   const [active, setActive] = useState("All");
   const filtered =
     active === "All" ? galleryImages : galleryImages.filter((i) => i.category === active);
+
+  // Lightbox State
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+
+  // Close lightbox on escape key
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setLightboxIndex(null);
+      if (e.key === "ArrowRight" && lightboxIndex !== null) {
+        setLightboxIndex((prev) => (prev !== null && prev < filtered.length - 1 ? prev + 1 : prev));
+      }
+      if (e.key === "ArrowLeft" && lightboxIndex !== null) {
+        setLightboxIndex((prev) => (prev !== null && prev > 0 ? prev - 1 : prev));
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [lightboxIndex, filtered.length]);
 
   return (
     <>
@@ -57,21 +76,65 @@ function GalleryPage() {
           {filtered.map((img, i) => (
             <div
               key={`${img.alt}-${i}`}
-              className="overflow-hidden rounded-2xl border border-border bg-card shadow-soft"
+              onClick={() => setLightboxIndex(i)}
+              className="cursor-pointer overflow-hidden rounded-2xl border border-border bg-card shadow-soft group"
             >
-              <img
-                src={img.src}
-                alt={img.alt}
-                width={765}
-                height={1020}
-                loading="lazy"
-                className="aspect-[4/3] w-full object-cover transition-transform duration-500 hover:scale-105"
-              />
+              <div className="relative aspect-[4/3] w-full overflow-hidden">
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  width={765}
+                  height={1020}
+                  loading="lazy"
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/10" />
+              </div>
               <p className="px-4 py-3 text-xs text-muted-foreground">{img.alt}</p>
             </div>
           ))}
         </div>
       </section>
+
+      {/* Lightbox Overlay */}
+      {lightboxIndex !== null && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 backdrop-blur-sm transition-opacity duration-300">
+          <button
+            className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors"
+            onClick={() => setLightboxIndex(null)}
+            aria-label="Close"
+          >
+            <X className="h-8 w-8" />
+          </button>
+          
+          <button
+            className={`absolute left-4 sm:left-10 text-white/70 hover:text-white transition-colors p-2 ${lightboxIndex === 0 ? 'opacity-30 cursor-not-allowed' : ''}`}
+            onClick={() => setLightboxIndex((prev) => (prev !== null && prev > 0 ? prev - 1 : prev))}
+            disabled={lightboxIndex === 0}
+            aria-label="Previous image"
+          >
+            <ChevronLeft className="h-10 w-10" />
+          </button>
+
+          <div className="max-w-5xl max-h-[85vh] w-full px-16 flex flex-col items-center">
+            <img 
+              src={filtered[lightboxIndex].src} 
+              alt={filtered[lightboxIndex].alt}
+              className="max-h-[75vh] w-auto object-contain rounded shadow-2xl"
+            />
+            <p className="text-white/80 mt-6 text-center">{filtered[lightboxIndex].alt}</p>
+          </div>
+
+          <button
+            className={`absolute right-4 sm:right-10 text-white/70 hover:text-white transition-colors p-2 ${lightboxIndex === filtered.length - 1 ? 'opacity-30 cursor-not-allowed' : ''}`}
+            onClick={() => setLightboxIndex((prev) => (prev !== null && prev < filtered.length - 1 ? prev + 1 : prev))}
+            disabled={lightboxIndex === filtered.length - 1}
+            aria-label="Next image"
+          >
+            <ChevronRight className="h-10 w-10" />
+          </button>
+        </div>
+      )}
     </>
   );
 }

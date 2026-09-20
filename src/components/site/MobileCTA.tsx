@@ -1,4 +1,4 @@
-import { Phone } from "lucide-react";
+import { Phone, Home } from "lucide-react";
 import { SITE, WA, waLink } from "@/lib/site";
 
 function WhatsAppIcon({ className }: { className?: string }) {
@@ -12,16 +12,16 @@ function WhatsAppIcon({ className }: { className?: string }) {
 export function MobileCTA() {
   const items = [
     {
-      href: waLink(WA.general),
+      href: `tel:${SITE.phoneRaw}`,
+      label: "Call",
+      icon: Phone,
+      external: false,
+    },
+    {
+      href: waLink("Hello, I would like to chat about Alpine Crest Homestay."),
       label: "WhatsApp",
       icon: WhatsAppIcon,
       external: true,
-    },
-    {
-      href: `tel:${SITE.phoneRaw}`,
-      label: "Call Now",
-      icon: Phone,
-      external: false,
     },
     {
       href: SITE.mapsDirections,
@@ -29,23 +29,31 @@ export function MobileCTA() {
       icon: null as never,
       external: true,
     },
+    {
+      href: waLink(WA.general),
+      label: "Book",
+      icon: Home,
+      external: true,
+    },
   ];
 
   return (
     <div className="fixed inset-x-0 bottom-0 z-50 border-t border-border bg-card/95 backdrop-blur lg:hidden">
-      <ul className="grid grid-cols-3">
+      <ul className="grid grid-cols-4">
         {items.map(({ href, label, icon: Icon }) => (
           <li key={label}>
             <a
               href={href}
               target={href.startsWith("http") ? "_blank" : undefined}
               rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
-              className="flex flex-col items-center gap-1 px-2 py-2.5 text-[0.68rem] font-semibold text-foreground"
+              className="flex flex-col items-center gap-1 px-1 py-2.5 text-[0.68rem] font-semibold text-foreground hover:bg-secondary/50 transition-colors"
             >
               {label === "Directions" ? (
                 <svg className="h-4.5 w-4.5 text-moss" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <polygon points="3 11 22 2 13 21 11 13 3 11" />
                 </svg>
+              ) : label === "Book" ? (
+                <Icon className="h-4.5 w-4.5 text-primary" />
               ) : (
                 <Icon className="h-4.5 w-4.5 text-moss" />
               )}

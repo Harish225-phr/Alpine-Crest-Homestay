@@ -87,11 +87,11 @@ const whyStay = [
 ];
 
 const destinations = [
-  { name: "Theog Town", distance: "6 km", slug: "/homestay-at-theog", image: "/images/destinations/image.png", alt: "Mountain landscape near Theog, Himachal Pradesh" },
-  { name: "Kufri", distance: "22 km", slug: "/homestay-at-kufri", image: "/images/destinations/image copy.png", alt: "Snowy mountain peaks near Kufri, Himachal Pradesh" },
-  { name: "Fagu", distance: "30 km", slug: "/homestay-at-fagu", image: "/images/destinations/image copy 2.png", alt: "Himalayan village and valley near Fagu, Himachal Pradesh" },
-  { name: "Shimla Mall Road", distance: "38 km", slug: "/homestay-at-shimla", image: "/images/destinations/image copy 3.png", alt: "Shimla Mall Road and colonial architecture, Himachal Pradesh" },
-  { name: "Chail", distance: "45 km", slug: "/homestay-at-chail", image: "/images/destinations/image copy 4.png", alt: "Dense pine and deodar forest near Chail, Himachal Pradesh" },
+  { name: "Theog Town", distance: "6 km", slug: "/places-to-visit/theog", image: "/images/destinations/image.png", alt: "Mountain landscape near Theog, Himachal Pradesh" },
+  { name: "Kufri", distance: "22 km", slug: "/places-to-visit/kufri", image: "/images/destinations/image copy.png", alt: "Snowy mountain peaks near Kufri, Himachal Pradesh" },
+  { name: "Fagu", distance: "30 km", slug: "/places-to-visit/fagu", image: "/images/destinations/image copy 2.png", alt: "Himalayan village and valley near Fagu, Himachal Pradesh" },
+  { name: "Shimla Mall Road", distance: "38 km", slug: "/places-to-visit/shimla", image: "/images/destinations/image copy 3.png", alt: "Shimla Mall Road and colonial architecture, Himachal Pradesh" },
+  { name: "Chail", distance: "45 km", slug: "/places-to-visit/chail", image: "/images/destinations/image copy 4.png", alt: "Dense pine and deodar forest near Chail, Himachal Pradesh" },
 ];
 
 function HomePage() {
@@ -613,6 +613,87 @@ function HomePage() {
             </StaggerItem>
           ))}
         </StaggerGroup>
+      </section>
+
+      {/* Gallery Preview */}
+      <section className="container-page py-20">
+        <Reveal>
+          <SectionHeading
+            eyebrow="Gallery"
+            title="Glimpses of Alpine Crest"
+            intro="Take a look at the rooms, the views, and the food you can expect during your stay."
+            align="center"
+          />
+        </Reveal>
+        <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4">
+          {[exterior, deluxeBalcony, lounge, food].map((img, i) => (
+            <Reveal key={i} delay={i * 0.1}>
+              <div className="relative aspect-square overflow-hidden rounded-xl shadow-soft">
+                <img
+                  src={img}
+                  alt={`Alpine Crest Homestay Gallery ${i + 1}`}
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+                />
+              </div>
+            </Reveal>
+          ))}
+        </div>
+        <Reveal delay={0.3} className="text-center mt-8">
+          <Link
+            to="/gallery"
+            className="inline-flex items-center gap-1.5 text-sm font-semibold text-moss underline underline-offset-4"
+          >
+            View full gallery
+            <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
+          </Link>
+        </Reveal>
+      </section>
+
+      {/* Guest Reviews (Editable Structure) */}
+      <section className="bg-secondary/60 py-20">
+        <div className="container-page">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Guest Reviews"
+              title="What our guests say"
+              align="center"
+            />
+          </Reveal>
+          <StaggerGroup className="mt-12 grid gap-6 md:grid-cols-3" stagger={0.1}>
+            {/* Owner can replace these with actual Google/Airbnb reviews later */}
+            {[
+              { text: "A peaceful stay with excellent home-cooked food and great views of the valley. Highly recommended for families.", author: "Guest Review", source: "Google" },
+              { text: "Beautiful location away from the crowd. The hosts are very welcoming and the rooms are clean and comfortable.", author: "Guest Review", source: "Google" },
+              { text: "Perfect weekend getaway near Shimla. Loved the balcony views and the authentic Himachali hospitality.", author: "Guest Review", source: "Google" },
+            ].map((review, i) => (
+              <StaggerItem key={i}>
+                <div className="h-full rounded-2xl border border-border bg-card p-6 shadow-soft flex flex-col">
+                  <div className="flex gap-1 text-[#F59E0B] mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-4 w-4 fill-current" />
+                    ))}
+                  </div>
+                  <p className="flex-1 text-sm leading-relaxed text-muted-foreground mb-6">"{review.text}"</p>
+                  <div>
+                    <p className="font-semibold text-sm">{review.author}</p>
+                    <p className="text-xs text-muted-foreground">{review.source}</p>
+                  </div>
+                </div>
+              </StaggerItem>
+            ))}
+          </StaggerGroup>
+          <Reveal delay={0.4} className="text-center mt-8">
+            <a
+              href={SITE.mapsDirections}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-full border border-border px-6 py-3 text-sm font-semibold hover:bg-card hover:shadow-soft transition-all"
+            >
+              See More Reviews on Google
+            </a>
+          </Reveal>
+        </div>
       </section>
 
       {/* FAQ */}

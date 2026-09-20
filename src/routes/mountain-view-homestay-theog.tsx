@@ -8,29 +8,29 @@ import { Reveal } from "@/components/site/Reveal";
 import { SectionHeading } from "@/components/site/SectionHeading";
 import { exterior, deluxeBalcony, standardRoom } from "@/lib/images";
 
-export const Route = createFileRoute("/homestay-at-narkanda")({
+export const Route = createFileRoute("/mountain-view-homestay-theog")({
   head: () => ({
     meta: [
-      { title: "Best Homestay at Near Narkanda | Alpine Crest Homestay" },
+      { title: "Mountain View Homestay in Theog | Alpine Crest" },
       {
         name: "description",
         content:
-          "Looking for the best homestay at near Narkanda? Alpine Crest Homestay in Kathot near Theog is a peaceful base with easy access to Narkanda, Hatu Peak and the apple belt of Kotgarh — mountain views, balconies and home-cooked food.",
+          "Looking for a mountain view homestay in Theog? Alpine Crest Homestay in Kathot near Theog is a peaceful base with easy access to Narkanda, Hatu Peak and the apple belt of Kotgarh — mountain views, balconies and home-cooked food.",
       },
-      { property: "og:title", content: "Best Homestay at Near Narkanda | Alpine Crest Homestay" },
+      { property: "og:title", content: "Mountain View Homestay in Theog | Alpine Crest" },
       {
         property: "og:description",
         content:
           "Peaceful homestay near Narkanda. Mountain views, private balconies, home-cooked food, easy access to Hatu Peak.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/homestay-at-narkanda" },
+      { property: "og:url", content: "/mountain-view-homestay-theog" },
     ],
-    links: [{ rel: "canonical", href: "/homestay-at-narkanda" }],
+    links: [{ rel: "canonical", href: "/mountain-view-homestay-theog" }],
     scripts: [
       breadcrumbSchema([
         { name: "Home", path: "/" },
-        { name: "Homestay at Narkanda", path: "/homestay-at-narkanda" },
+        { name: "Mountain View Homestay in Theog", path: "/mountain-view-homestay-theog" },
       ]),
     ],
   }),
@@ -40,16 +40,16 @@ export const Route = createFileRoute("/homestay-at-narkanda")({
 function HomestayAtNarkandaPage() {
   return (
     <>
-      <Breadcrumbs items={[{ name: "Homestay at Narkanda" }]} />
+      <Breadcrumbs items={[{ name: "Mountain View Homestay in Theog" }]} />
 
       <section className="container-page grid items-center gap-10 py-12 lg:grid-cols-2">
         <div>
-          <p className="eyebrow">Homestay at Narkanda</p>
+          <p className="eyebrow">Mountain View Homestay</p>
           <h1 className="mt-3 text-4xl leading-[1.1] sm:text-5xl">
-            Best Homestay at Near Narkanda, Himachal Pradesh
+            Mountain View Homestay in Theog
           </h1>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
-            If you are searching for the best homestay at near Narkanda, Alpine
+            If you are searching for a mountain view homestay in Theog, Alpine
             Crest Homestay is a peaceful mountain retreat in Village Kathot near
             Theog, with easy access to Narkanda along NH-5. Narkanda is known for
             Hatu Peak, skiing in winter and the apple orchards of Kotgarh — and our
@@ -183,9 +183,9 @@ function HomestayAtNarkandaPage() {
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
               { name: "Narkanda", to: "/places-to-visit/narkanda" },
-              { name: "Theog", to: "/homestay-at-theog" },
-              { name: "Fagu", to: "/homestay-at-fagu" },
-              { name: "Shimla", to: "/homestay-at-shimla" },
+              { name: "Theog", to: "/homestay-in-theog" },
+              { name: "Fagu", to: "/homestay-in-kathot" },
+              { name: "Shimla", to: "/homestay-near-shimla" },
             ].map((d) => (
               <Link
                 key={d.name}
